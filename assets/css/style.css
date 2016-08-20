@@ -3,7 +3,7 @@ body {
   margin: 0 20px 60px 20px;
   padding: 0;
   font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-size: 16px;
+  font-size: 1.1em;
   line-height: 1.3em;
   font-weight: 300;
   color: #2B3033; }
@@ -50,7 +50,7 @@ header {
         font-weight: 700;
         text-decoration: none; }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
   header h1 {
     font-size: 49px;
     line-height: 40px; } }
@@ -95,7 +95,20 @@ section.gallery {
     margin: 10px;
     overflow: hidden;
     display: block;
-    float: left; }
+    float: left;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -ms-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+    -spec-transition: transform 0.5s;
+    transition: transform 0.5s; }
+    section.gallery .cell:hover, section.gallery .cell:active {
+      -webkit-transform: scale(1.05);
+      -moz-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      -o-transform: scale(1.05);
+      -spec-transform: scale(1.05);
+      transform: scale(1.05); }
     section.gallery .cell > img {
       width: 100%;
       display: block;
