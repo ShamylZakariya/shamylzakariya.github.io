@@ -1,0 +1,249 @@
+@import "bourbon/bourbon";
+
+$width-max: 960px;
+$vertical-spacing: 60px;
+$margin-gallery-cell: 10px;
+
+$color-text: #2B3033;
+$color-link: #50E3C2;
+$font-title: 'Abril Fatface', cursive;
+$font-body: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$font-body-size: 16px;
+
+body {
+	background: white;
+	margin: 0 20px $vertical-spacing 20px;
+	padding: 0;
+	font-family: $font-body;
+	font-size: $font-body-size;
+	line-height: 1.3em;
+	font-weight: 300;
+	color: $color-text;
+
+	&.overlay-visible {
+		overflow-y: hidden;
+	}
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: $font-title;
+	font-weight: normal;
+	text-transform: lowercase;
+}
+
+.main {
+	max-width: $width-max;
+	margin: 0 auto;
+}
+
+a {
+	color: $color-link;
+	text-decoration: underline;
+	//font-weight: 700;
+}
+
+header {
+	max-width: $width-max;
+	margin: 0 auto;
+	text-transform: lowercase;
+	h1 {
+		font-size: 98px;
+		line-height: 88px;
+		margin: 0;
+		padding: $vertical-spacing 0 0 0;
+
+		.firstname, .lastname {
+			display: block;
+		}
+	}
+
+	h2 {
+		margin: 0;
+		padding: 1em 0;
+		font-family: $font-body;
+		font-size: 14px;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		li {
+			list-style: none;
+			display: inline-block;
+			margin-right: 2em;
+
+			a {
+				font-weight: 700;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 500px) {
+	header h1 {
+		font-size: 49px;
+		line-height: 40px;
+	}
+}
+
+section.detail {
+
+	margin-top: $vertical-spacing;
+	h2 {
+		font-size: 34px;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+
+		li {
+			list-style: none;
+			margin: 0;
+			padding: 0.5em 0;
+		}
+	}
+
+	.date {
+		font-weight: bold;
+	}
+
+	.what {
+		margin-left: 0.1em;
+
+		&:after {
+			// we're producing a newline, basically.
+			content: ' ';
+			display: block;
+		}
+	}
+}
+
+footer {
+	font-size: 70%;
+	padding: 0;
+	margin: $vertical-spacing 0;
+	padding-top: 1em;
+	border-top: 1px solid $color-link;
+	opacity: 0.5;
+}
+
+section.gallery {
+
+	margin-top: $vertical-spacing;
+	margin-left: -$margin-gallery-cell;
+	margin-right: -$margin-gallery-cell;
+	@include clearfix();
+
+	.cell {
+		width: 300px;
+		height: 300px;
+		margin: $margin-gallery-cell;
+		overflow: hidden;
+		display: block;
+		float: left;
+
+		> img {
+			width: 100%;
+			display: block;
+			cursor: pointer;
+		}
+
+		.detail {
+			display: none;
+		}
+	}
+}
+
+.detail-overlay {
+	background: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	overflow-y: scroll;
+	display: none;
+	opacity: 0;
+
+	.content {
+		max-width: $width-max;
+		margin: $vertical-spacing auto;
+		padding: 0 20px;
+		position: relative;
+
+		a.close {
+			display: inline-block;
+			@include hide-text;
+			cursor: pointer;
+			width: 19px;
+			height: 19px;
+			margin-right: 19px;
+			background: url(../images/overlay-close.png) center center no-repeat;
+			background-size: contain;
+
+			&:hover {
+				// bourbon's @include transition is missing, wtf
+				@include prefixer(transition, transform 0.5s, webkit moz ms o spec);
+				@include prefixer(transform, rotate(0.5turn), webkit moz ms o spec);
+			}
+		}
+
+		h1 {
+			display: inline-block;
+			line-height: 1.3em;
+		}
+
+		h2 {
+			font-family: $font-body;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 14px;
+		}
+
+		.shots {
+			font-size: 0;
+			@include clearfix;
+			margin: 0 -$margin-gallery-cell;
+			img {
+				display: inline-block;
+				box-sizing: border-box;
+				max-width: 100%;
+				margin: $margin-gallery-cell;
+				height: auto !important;
+				box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+				vertical-align: top;
+			}
+
+			.row {
+				img {
+					width: 30%;
+				}
+			}
+		}
+
+		video {
+			display: block;
+			max-width: 100% !important;
+			height: auto !important;
+			margin: $margin-gallery-cell 0;
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.detail-overlay .content .shots {
+		img {
+			max-width: 80%;
+		}
+
+		.row {
+			img {
+				width: 80%;
+			}
+		}
+	}
+}

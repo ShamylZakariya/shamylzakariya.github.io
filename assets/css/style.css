@@ -1,0 +1,184 @@
+body {
+  background: white;
+  margin: 0 20px 60px 20px;
+  padding: 0;
+  font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.3em;
+  font-weight: 300;
+  color: #2B3033; }
+  body.overlay-visible {
+    overflow-y: hidden; }
+
+h1, h2, h3, h4, h5 {
+  font-family: "Abril Fatface", cursive;
+  font-weight: normal;
+  text-transform: lowercase; }
+
+.main {
+  max-width: 960px;
+  margin: 0 auto; }
+
+a {
+  color: #50E3C2;
+  text-decoration: underline; }
+
+header {
+  max-width: 960px;
+  margin: 0 auto;
+  text-transform: lowercase; }
+  header h1 {
+    font-size: 98px;
+    line-height: 88px;
+    margin: 0;
+    padding: 60px 0 0 0; }
+    header h1 .firstname, header h1 .lastname {
+      display: block; }
+  header h2 {
+    margin: 0;
+    padding: 1em 0;
+    font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 14px; }
+  header ul {
+    margin: 0;
+    padding: 0; }
+    header ul li {
+      list-style: none;
+      display: inline-block;
+      margin-right: 2em; }
+      header ul li a {
+        font-weight: 700;
+        text-decoration: none; }
+
+@media screen and (max-width: 500px) {
+  header h1 {
+    font-size: 49px;
+    line-height: 40px; } }
+section.detail {
+  margin-top: 60px; }
+  section.detail h2 {
+    font-size: 34px; }
+  section.detail ul {
+    margin: 0;
+    padding: 0; }
+    section.detail ul li {
+      list-style: none;
+      margin: 0;
+      padding: 0.5em 0; }
+  section.detail .date {
+    font-weight: bold; }
+  section.detail .what {
+    margin-left: 0.1em; }
+    section.detail .what:after {
+      content: ' ';
+      display: block; }
+
+footer {
+  font-size: 70%;
+  padding: 0;
+  margin: 60px 0;
+  padding-top: 1em;
+  border-top: 1px solid #50E3C2;
+  opacity: 0.5; }
+
+section.gallery {
+  margin-top: 60px;
+  margin-left: -10px;
+  margin-right: -10px; }
+  section.gallery::after {
+    clear: both;
+    content: "";
+    display: block; }
+  section.gallery .cell {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    overflow: hidden;
+    display: block;
+    float: left; }
+    section.gallery .cell > img {
+      width: 100%;
+      display: block;
+      cursor: pointer; }
+    section.gallery .cell .detail {
+      display: none; }
+
+.detail-overlay {
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  display: none;
+  opacity: 0; }
+  .detail-overlay .content {
+    max-width: 960px;
+    margin: 60px auto;
+    padding: 0 20px;
+    position: relative; }
+    .detail-overlay .content a.close {
+      display: inline-block;
+      overflow: hidden;
+      text-indent: 101%;
+      white-space: nowrap;
+      cursor: pointer;
+      width: 19px;
+      height: 19px;
+      margin-right: 19px;
+      background: url(../images/overlay-close.png) center center no-repeat;
+      background-size: contain; }
+      .detail-overlay .content a.close:hover {
+        -webkit-transition: transform 0.5s;
+        -moz-transition: transform 0.5s;
+        -ms-transition: transform 0.5s;
+        -o-transition: transform 0.5s;
+        -spec-transition: transform 0.5s;
+        transition: transform 0.5s;
+        -webkit-transform: rotate(0.5turn);
+        -moz-transform: rotate(0.5turn);
+        -ms-transform: rotate(0.5turn);
+        -o-transform: rotate(0.5turn);
+        -spec-transform: rotate(0.5turn);
+        transform: rotate(0.5turn); }
+    .detail-overlay .content h1 {
+      display: inline-block;
+      line-height: 1.3em; }
+    .detail-overlay .content h2 {
+      font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 14px; }
+    .detail-overlay .content .shots {
+      font-size: 0;
+      margin: -10px; }
+      .detail-overlay .content .shots::after {
+        clear: both;
+        content: "";
+        display: block; }
+      .detail-overlay .content .shots img {
+        display: inline-block;
+        box-sizing: border-box;
+        max-width: 100%;
+        margin: 10px;
+        height: auto !important;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        vertical-align: top; }
+      .detail-overlay .content .shots .row img {
+        width: 30%; }
+    .detail-overlay .content video {
+      display: block;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: 10px 0; }
+
+@media screen and (max-width: 600px) {
+  .detail-overlay .content .shots img {
+    max-width: 80%; }
+  .detail-overlay .content .shots .row img {
+    width: 80%; } }
+
+/*# sourceMappingURL=style.css.map */

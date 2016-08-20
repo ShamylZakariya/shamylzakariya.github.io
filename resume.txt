@@ -1,0 +1,42 @@
+Shamyl Zakariya
+2121 6th Ave, Apt N1012
+Seattle WA, 98121
+
+http://shamyl.zakariya.net
+shamyl@gmail.com
+(703) 851-4193
+
+I strive to build applications and websites which people will find delightful to use. I'm a graphic designer, but I'm also a programmer and I live and breathe code. In my work, behavior is design (and design is behavior), so designing, building, and prototyping simultaneously is paramount. 
+
+This means I spend as much time in Photoshop, Illustrator and Sketch.app as I do in TextMate, Eclipse and Xcode. By day I'm primarily responsible for web design and Javascript programming but in my free time I write graphics code in C++/OpenGL and apps/games/interactive doodads in C/ObjectiveC/Java/NodeJS and so on.
+
+
+Career:
+
+1997-1999: Darden School of Business, Charlottesville VA
+Graphic designer, programmer
+
+At Darden I designed & built educational software in Macromedia Flash and Director. 
+
+1999-present: APCO Worldwide, Washington DC
+Art director, client-side web programmer
+
+At APCO Worldwide I'm responsible for working with clients to design websites and mobile applications, to build them using modern standards, and to maintain and update them as time moves on.
+
+
+Daily Skills:
+
+Photoshop
+Illustrator
+Javascript (client and server-side)
+C/ObjectiveC/C++/Java
+Git
+
+Occasional Skills:
+
+Python (somewhat languished)
+
+Education:
+
+Art, University of Virginia, class of 1999
+Lifetime of reading, experimenting and trying to make neat things
