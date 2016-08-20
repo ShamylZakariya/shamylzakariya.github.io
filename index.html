@@ -29,7 +29,7 @@
 			<div class="detail">
 				<h1>Surfacer</h1>
 				<p><a href="https://github.com/ShamylZakariya/Surfacer">Source code on Github</a></p>
-				<p>A 2d sidescrolling physics-based game I was writing, but never finished.</p>
+				<p>A 2d side-scrolling physics-based game which I never finished. It no longer even compiles, because it depends on pre-C++0x11 tr1 libraries. I plan on attacking it and getting it running again, because it's too <em>neat</em> to let succomb to bitrot.</p>
 				<h2>Features</h2>
 				<ul>
 					<li>Destructible terrain, where cut-off geometry is dynamic, and part of gameplay</li>
@@ -45,10 +45,12 @@
 					<div class="row">
 						<img data-lazy-src="assets/gallery/sfr-1.png"/>
 						<img data-lazy-src="assets/gallery/sfr-2.png"/>
-						<img data-lazy-src="assets/gallery/sfr-3.png"/>
 					</div>
 					<div class="row">
+						<img data-lazy-src="assets/gallery/sfr-3.png"/>
 						<img data-lazy-src="assets/gallery/sfr-4.png"/>
+						</div>
+					<div class="row">
 						<img data-lazy-src="assets/gallery/sfr-5.png"/>
 					</div>
 				</div>
@@ -61,19 +63,16 @@
 			<img src="assets/gallery/sre-0.png"/>
 			<div class="detail">
 				<h1>SimpleGameFramework / SimpleRenderingEngine</h1>
-				<p>3D Game framework written betwen 2007 and 2010. Written from ground-up ( as-in, I started with an
+				<p>3D Game framework written between 2007 and 2010. Written from ground-up ( as-in, I started with an
 					empty project, and wrote it all myself) in C++ and some ObjectiveC, and with rendering in
 					OpenGL/GLSL.</p>
 				<h2>Features</h2>
 				<ul>
 					<li>Physics, using the OpenDynamicsEngine and Bullet, as pluggable modules</li>
-					<li>Shadow mapping for directional (using CSM), point and spot lights, with efficient visibility
+					<li>Shadow mapping for directional (using CSM), point and spot lights (using depth cubemaps), with efficient visibility
 						culling of light volumes
 					</li>
 					<li>Quirky materials framework
-					<li>Shadow mapping for directional (using CSM), point and spot lights, with efficient visibility
-						culling of light volumes
-					</li>
 					</li>
 					<li>Voxel-based terrain, editable in real-time, with Lindstrom-Turk edge-collapse mesh optimization,
 						uzing the <a href="https://www.cgal.org">CGAL library.</a></li>
@@ -89,16 +88,20 @@
 					<div class="row">
 						<img data-lazy-src="assets/gallery/sre-1.png"/>
 						<img data-lazy-src="assets/gallery/sre-2.png"/>
-						<img data-lazy-src="assets/gallery/sre-3.png"/>
 					</div>
 					<div class="row">
+						<img data-lazy-src="assets/gallery/sre-3.png"/>
 						<img data-lazy-src="assets/gallery/sre-4.png"/>
+					</div>
+					<div class="row">
 						<img data-lazy-src="assets/gallery/sre-5.png"/>
 						<img data-lazy-src="assets/gallery/sre-6.png"/>
 					</div>
 					<div class="row">
 						<img data-lazy-src="assets/gallery/sre-7.png"/>
 						<img data-lazy-src="assets/gallery/sre-8.png"/>
+					</div>
+					<div class="row">
 						<img data-lazy-src="assets/gallery/sre-9.png"/>
 					</div>
 				</div>
@@ -119,10 +122,12 @@
 					<div class="row">
 						<img data-lazy-src="assets/gallery/sq-1.png"/>
 						<img data-lazy-src="assets/gallery/sq-2.png"/>
-						<img data-lazy-src="assets/gallery/sq-3.png"/>
 					</div>
 					<div class="row">
+						<img data-lazy-src="assets/gallery/sq-3.png"/>
 						<img data-lazy-src="assets/gallery/sq-4.png"/>
+					</div>
+					<div class="row">
 						<img data-lazy-src="assets/gallery/sq-5.png"/>
 					</div>
 				</div>
@@ -140,6 +145,8 @@
 					<div class="row">
 						<img data-lazy-src="assets/gallery/scope-1.png"/>
 						<img data-lazy-src="assets/gallery/scope-2.png"/>
+					</div>
+					<div class="row">
 						<img data-lazy-src="assets/gallery/scope-3.png"/>
 					</div>
 					<img data-lazy-src="assets/gallery/med-5.png"/>
@@ -184,12 +191,14 @@
 			<img src="assets/gallery/apco-0.png"/>
 			<div class="detail">
 				<h1>APCO Worldwide</h1>
-				<p>Website design for my employer, APCO Worldwide.</p>
+				<p>Website design for my employer, <a href="http://www.apcoworldwide.com">APCO Worldwide</a>.</p>
 
 				<div class="shots">
 					<div class="row">
 						<img data-lazy-src="assets/gallery/apco-1.jpg"/>
 						<img data-lazy-src="assets/gallery/apco-3.png"/>
+					</div>
+					<div class="row">
 						<img data-lazy-src="assets/gallery/apco-2.jpg"/>
 					</div>
 				</div>
@@ -201,16 +210,25 @@
 			<img src="assets/gallery/vph-0.png"/>
 			<div class="detail">
 				<h1>Vax Pack Hero</h1>
-				<p>An educational game I built for the Children's Hospital of Philadelphia. The game features <a href="https://github.com/ShamylZakariya/DungeonBuilder">random level generation</a>, automatic monster generation based on the strength of the player, and cute pixelated graphics. Plays on desktop & mobile.</p>
+				<p>An educational game for the <a href="http://www.chop.edu/">Children&rsquo;s Hospital of Philadelphia</a>.
+
+				<h2>Features</h2>
+				<ul>
+					<li><a href="https://github.com/ShamylZakariya/DungeonBuilder">Random level generation</a></li>
+					<li>Automatic monster spawning based on the capabilities of the player</li>
+					<li>Cute pixelated graphics</li>
+				</ul>
 
 				<div class="shots">
 					<div class="row">
 						<img data-lazy-src="assets/gallery/vph-1.png"/>
 						<img data-lazy-src="assets/gallery/vph-2.png"/>
-						<img data-lazy-src="assets/gallery/vph-3.png"/>
 					</div>
 					<div class="row">
+						<img data-lazy-src="assets/gallery/vph-3.png"/>
 						<img data-lazy-src="assets/gallery/vph-4.png"/>
+					</div>
+					<div class="row">
 						<img data-lazy-src="assets/gallery/vph-5.png"/>
 						<img data-lazy-src="assets/gallery/vph-6.png"/>
 					</div>
@@ -257,8 +275,7 @@
 				because
 				print is neat
 			</li>
-			<li>MacOS, iOS, Android native application development. Back in the day: some Win32, GTK, KDE and (klaxon!
-				klaxon!) <a
+			<li>MacOS, iOS, Android native application development. Back in the day: some Win32, GTK, KDE and <a
 						href="https://en.wikipedia.org/wiki/BeOS">BeOS</a> native app development.
 			</li>
 		</ul>
@@ -293,14 +310,14 @@
 
 		<ul>
 			<li>
-				<span class="date">1995-1999</span>:<span class="what">Learning to program and getting hooked on graphics programming.</span>Wrote
+				<span class="date">1990-1999</span>:<span class="what">Learning to program and getting hooked on graphics programming.</span>Wrote
 				a simple software 3D graphics rasterizer in C/C++, supporting texture mapping, depth buffer, and simple
-				gaurad shading. Wrote several experimental user-interfaces in Java, to make various day to day tasks
+				gouraud shading &mdash; this was a great exercise in <a href="https://www.amazon.com/Michael-Abrashs-Graphics-Programming-Special/dp/1576101746">learning fast integer math</a>. Wrote several experimental user-interfaces in Java, to make various day to day tasks
 				like file browsing and designing finite state machines more intuitive.
 			</li>
 
 			<li>
-				<span class="date">1999-2004</span>:<span class="what">Wrote robotics simulation toolkit</span>I got
+				<span class="date">1999-2004</span>:<span class="what">Wrote a primitive robotics simulation toolkit</span>I got
 				very interested in <a href="https://en.wikipedia.org/wiki/Subsumption_architecture">behavioral
 				artificial intelligence</a> and decided to build a toolkit for hosting and testing autonomous agents. It
 				was a fun sandbox! Plus, I got hooked on OpenGL.
@@ -316,11 +333,11 @@
 			<li>
 				<span class="date">2010-2013</span>:<span class="what">Development of side-scrolling action game "Surfacer"</span>While
 				riding my bike to work one day I had an epiphany about destructible verlet-integrated meshes for 2d mass
-				simulation. It was a total dead end! But it led to a concept for a side-scrolling 2D game where the
-				character must reshape the environment, making new dynamic shapes, to solve spacial puzzles
+				simulation. <em>It was a total dead end!</em> But it led to a concept for a side-scrolling 2D game where the
+				character must reshape the environment, making new dynamic shapes, to solve spacial puzzles. Plus, I got to write a 2d version of the marching cubes alrgorithm.
 			</li>
 
-			<li><span class="date">2013-present</span>:<span class="what">Writing open source iOS and Android apps and libraries</span>
+			<li><span class="date">2013-present</span>:<span class="what">Writing <a href="https://github.com/ShamylZakariya/">open source iOS and Android apps and libraries</a></span>
 			</li>
 
 		</ul>

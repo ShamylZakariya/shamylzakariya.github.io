@@ -1,14 +1,14 @@
 Shamyl Zakariya
-2121 6th Ave, Apt N1012
+536 25th Ave S
 Seattle WA, 98121
 
-http://shamyl.zakariya.net
+http://shamylzakariya.github.io
 shamyl@gmail.com
 (703) 851-4193
 
 I strive to build applications and websites which people will find delightful to use. I'm a graphic designer, but I'm also a programmer and I live and breathe code. In my work, behavior is design (and design is behavior), so designing, building, and prototyping simultaneously is paramount. 
 
-This means I spend as much time in Photoshop, Illustrator and Sketch.app as I do in TextMate, Eclipse and Xcode. By day I'm primarily responsible for web design and Javascript programming but in my free time I write graphics code in C++/OpenGL and apps/games/interactive doodads in C/ObjectiveC/Java/NodeJS and so on.
+This means I spend as much time in Photoshop, Illustrator and Sketch as I do in TextMate, Eclipse, Xcode and the terminal. By day I'm primarily responsible for web design, print design, and Javascript programming; but in my free time I write graphics code in C++/OpenGL and apps/games/interactive doodads in C/ObjectiveC/Java/NodeJS and so on.
 
 
 Career:
@@ -18,25 +18,25 @@ Graphic designer, programmer
 
 At Darden I designed & built educational software in Macromedia Flash and Director. 
 
-1999-present: APCO Worldwide, Washington DC
+1999-present: APCO Worldwide, Washington DC (later Seattle, WA)
 Art director, client-side web programmer
 
-At APCO Worldwide I'm responsible for working with clients to design websites and mobile applications, to build them using modern standards, and to maintain and update them as time moves on.
+At APCO Worldwide I'm responsible for working with clients to design websites, print materials, and mobile applications. When my responsibility includes building them, I build them using modern standards and practices, and I maintain and update them as time moves on.
 
 
 Daily Skills:
 
 Photoshop
 Illustrator
-Javascript (client and server-side)
-C/ObjectiveC/C++/Java
-Git
+Sketch
+C/ObjectiveC/Swift/C++/Java/Javascript
+Git,Subversion
 
 Occasional Skills:
-
-Python (somewhat languished)
+Familiarity with InDesign
+Familiarity with Python & Ruby
 
 Education:
 
 Art, University of Virginia, class of 1999
-Lifetime of reading, experimenting and trying to make neat things
+Lifetime of reading, building, experimenting and trying to make neat things
