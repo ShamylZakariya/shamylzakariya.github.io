@@ -226,23 +226,22 @@ section.gallery {
 
 		.shots {
 			font-size: 0;
-			@include clearfix;
-			padding: $vertical-spacing/3 0;
-			margin: 0 (-$margin-gallery-cell);
-			img {
-				display: inline-block;
-				box-sizing: border-box;
-				max-width: 100%;
+			margin-left: -$margin-gallery-cell;
+			margin-right: -$margin-gallery-cell;
+
+			.cell {
+				width: 300px;
 				margin: $margin-gallery-cell;
-				height: auto !important;
-				box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+				height: auto;
+				display: inline-block;
 				vertical-align: top;
 			}
 
-			.row {
-				img {
-					width: 40%;
-				}
+			img {
+				display: block;
+				width: 100%;
+				height: auto !important;
+				box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 			}
 		}
 
@@ -263,20 +262,11 @@ section.gallery {
 }
 
 @media screen and (max-width: $medium-width) {
-	.detail-overlay .content .shots {
-		img {
-			max-width: 80%;
-		}
-
-		.row {
-			img {
-				width: 80%;
-			}
-		}
-	}
 }
 
-// for browsers with flexbox, let's make gallery better OK?
+//
+// for modern browsers: we'll use display:flex and calc() to make things nicer
+//
 
 @supports (display:flex) {
 
@@ -285,21 +275,36 @@ section.gallery {
 		flex-wrap: wrap;
 		flex-direction: row;
 
-		.cell {
+		> .cell {
 			margin: $margin-gallery-cell;
 			width: calc(33.333333333% - 20px);
 			height: auto;
 		}
 	}
 
+	.detail-overlay .content .shots {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+
+		> .cell {
+			margin: $margin-gallery-cell;
+			width: calc(33.333333333% - 20px);
+			height: auto;
+		}
+	}
+
+
 	@media screen and (max-width: $medium-width) {
-		section.gallery .cell {
+		section.gallery > .cell,
+		.detail-overlay .content .shots > .cell{
 			width: calc(50% - 20px);
 		}
 	}
 
 	@media screen and (max-width: $narrow-width) {
-		section.gallery .cell {
+		section.gallery > .cell,
+		.detail-overlay .content .shots > .cell {
 			width: calc(100% - 20px);
 		}
 	}

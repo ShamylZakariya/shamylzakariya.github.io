@@ -181,22 +181,19 @@ section.gallery {
           left: -1em; }
     .detail-overlay .content .shots {
       font-size: 0;
-      padding: 20px 0;
-      margin: 0 -10px; }
-      .detail-overlay .content .shots::after {
-        clear: both;
-        content: "";
-        display: block; }
-      .detail-overlay .content .shots img {
-        display: inline-block;
-        box-sizing: border-box;
-        max-width: 100%;
+      margin-left: -10px;
+      margin-right: -10px; }
+      .detail-overlay .content .shots .cell {
+        width: 300px;
         margin: 10px;
-        height: auto !important;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        height: auto;
+        display: inline-block;
         vertical-align: top; }
-      .detail-overlay .content .shots .row img {
-        width: 40%; }
+      .detail-overlay .content .shots img {
+        display: block;
+        width: 100%;
+        height: auto !important;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); }
     .detail-overlay .content video {
       display: block;
       max-width: 100% !important;
@@ -207,26 +204,32 @@ section.gallery {
   header h1 {
     font-size: 49px;
     line-height: 40px; } }
-@media screen and (max-width: 720px) {
-  .detail-overlay .content .shots img {
-    max-width: 80%; }
-  .detail-overlay .content .shots .row img {
-    width: 80%; } }
 @supports (display: flex) {
   section.gallery {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row; }
-    section.gallery .cell {
+    section.gallery > .cell {
+      margin: 10px;
+      width: calc(33.333333333% - 20px);
+      height: auto; }
+
+  .detail-overlay .content .shots {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; }
+    .detail-overlay .content .shots > .cell {
       margin: 10px;
       width: calc(33.333333333% - 20px);
       height: auto; }
 
   @media screen and (max-width: 720px) {
-    section.gallery .cell {
+    section.gallery > .cell,
+    .detail-overlay .content .shots > .cell {
       width: calc(50% - 20px); } }
   @media screen and (max-width: 480px) {
-    section.gallery .cell {
+    section.gallery > .cell,
+    .detail-overlay .content .shots > .cell {
       width: calc(100% - 20px); } } }
 
 /*# sourceMappingURL=style.css.map */
