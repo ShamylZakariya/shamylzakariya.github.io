@@ -3,6 +3,7 @@
 
 	var documentTitleBase = document.title;
 	var $body = $('body');
+	var $galleryItems = $('#gallery > .cell');
 	var $overlayRoot;
 
 	function prepareDetailNode($detailNode) {
@@ -18,6 +19,29 @@
 		});
 
 		return $detailNode;
+	}
+
+	function prevItem(id) {
+		return function() {
+			var idx = $('#' + id).index();
+			if (idx > 0) {
+				idx--;
+			} else {
+				idx = $galleryItems.length - 1;
+			}
+
+			var item = $galleryItems.eq(idx);
+			showOverlay(item.attr('id'), item.find('.detail'));
+		}
+	}
+
+	function nextItem(id) {
+		return function() {
+			var idx = $('#' + id).index();
+			idx = (idx + 1) % $galleryItems.length;
+			var item = $galleryItems.eq(idx);
+			showOverlay(item.attr('id'), item.find('.detail'));
+		}
 	}
 
 	function showOverlay(id, $detailNode, animate) {
@@ -47,11 +71,20 @@
 		}
 
 		var $overlayContent = $('<div>').addClass('content');
+		var $controlRow = $('<div>', { class: 'controls' });
 		var $closeButton = $('<a>', {text: 'Close', class: 'close'});
+		var $prevButton = $('<a>', {text: 'Prev', class: 'prev'});
+		var $nextButton = $('<a>', {text: 'Next', class: 'next'});
+		var $iterator = $('<div>', { class: 'iterator' });
 		$closeButton.click(hideOverlay);
+		$prevButton.click(prevItem(id));
+		$nextButton.click(nextItem(id));
 
+		$detailNode = $detailNode.clone();
 		prepareDetailNode($detailNode);
-		$overlayContent.append($closeButton).append($detailNode.contents());
+		$iterator.append([$prevButton, $nextButton]);
+		$controlRow.append([$closeButton, $iterator]);
+		$overlayContent.append($controlRow).append($detailNode.contents());
 		$overlayRoot.empty().append($overlayContent);
 
 		// now update window hash
@@ -90,7 +123,7 @@
 		$trigger.click(function () {
 			var $detail = $trigger.parent().find('.detail');
 			var id = $trigger.parent().attr('id');
-			showOverlay(id, $detail.clone());
+			showOverlay(id, $detail);
 		});
 	});
 
@@ -107,7 +140,7 @@
 		var $item = $('#' + hash);
 		if ($item.length) {
 			var $detail = $item.find('.detail');
-			showOverlay(hash, $detail.clone(), animate);
+			showOverlay(hash, $detail, animate);
 		} else {
 			hideOverlay(animate);
 		}

@@ -183,21 +183,45 @@ section.gallery {
 		padding: 0 20px;
 		position: relative;
 
+		$control-height: 40px;
+
+		.controls {
+			@include clearfix();
+
+			a.close {
+				display: block;
+				float: left;
+			}
+
+			.iterator {
+				display: block;
+				float: right;
+			}
+		}
+
 		a.close {
-			display: inline-block;
+			display: block;
 			@include hide-text;
 			cursor: pointer;
-			width: 19px;
-			height: 19px;
-			margin-right: 19px;
+			width: $control-height;
+			height: $control-height;
 			background: url(../images/overlay-close.png) center center no-repeat;
-			background-size: contain;
+			background-size: 19px;
 
 			&:hover {
 				// bourbon's @include transition is missing, wtf
 				@include prefixer(transition, transform 0.5s, webkit moz ms o spec);
 				@include prefixer(transform, rotate(0.5turn), webkit moz ms o spec);
 			}
+		}
+
+		a.prev, a.next {
+			text-transform: uppercase;
+			color: $color-text;
+			text-decoration: none;
+			margin-left: 2em;
+			line-height: $control-height;
+			cursor: pointer;
 		}
 
 		h1 {

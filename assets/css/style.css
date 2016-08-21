@@ -139,17 +139,26 @@ section.gallery {
     margin: 20px auto;
     padding: 0 20px;
     position: relative; }
+    .detail-overlay .content .controls::after {
+      clear: both;
+      content: "";
+      display: block; }
+    .detail-overlay .content .controls a.close {
+      display: block;
+      float: left; }
+    .detail-overlay .content .controls .iterator {
+      display: block;
+      float: right; }
     .detail-overlay .content a.close {
-      display: inline-block;
+      display: block;
       overflow: hidden;
       text-indent: 101%;
       white-space: nowrap;
       cursor: pointer;
-      width: 19px;
-      height: 19px;
-      margin-right: 19px;
+      width: 40px;
+      height: 40px;
       background: url(../images/overlay-close.png) center center no-repeat;
-      background-size: contain; }
+      background-size: 19px; }
       .detail-overlay .content a.close:hover {
         -webkit-transition: transform 0.5s;
         -moz-transition: transform 0.5s;
@@ -163,6 +172,13 @@ section.gallery {
         -o-transform: rotate(0.5turn);
         -spec-transform: rotate(0.5turn);
         transform: rotate(0.5turn); }
+    .detail-overlay .content a.prev, .detail-overlay .content a.next {
+      text-transform: uppercase;
+      color: #2B3033;
+      text-decoration: none;
+      margin-left: 2em;
+      line-height: 40px;
+      cursor: pointer; }
     .detail-overlay .content h1 {
       display: inline-block;
       line-height: 1.3em; }
