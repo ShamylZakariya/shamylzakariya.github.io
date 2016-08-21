@@ -36,25 +36,22 @@ header {
     header h1 .firstname, header h1 .lastname {
       display: block; }
   header h2 {
-    margin: 0;
-    padding: 1em 0;
+    margin: 2em 0 1em 0;
+    padding: 0;
     font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-size: 14px; }
   header ul {
-    margin: 0;
+    margin: 1em 0;
     padding: 0; }
     header ul li {
       list-style: none;
       display: inline-block;
-      margin-right: 2em; }
+      margin-right: 2em;
+      line-height: 2em; }
       header ul li a {
         font-weight: 700;
         text-decoration: none; }
 
-@media screen and (max-width: 480px) {
-  header h1 {
-    font-size: 49px;
-    line-height: 40px; } }
 section.detail {
   margin-top: 60px; }
   section.detail h2 {
@@ -113,6 +110,7 @@ section.gallery {
       transform: scale(1.05); }
     section.gallery .cell > img {
       width: 100%;
+      height: auto;
       display: block;
       cursor: pointer; }
     section.gallery .cell .detail {
@@ -129,7 +127,13 @@ section.gallery {
   width: 100%;
   overflow-y: scroll;
   display: none;
-  opacity: 0; }
+  opacity: 0;
+  -webkit-overflow-scrolling: touch;
+  -moz-overflow-scrolling: touch;
+  -ms-overflow-scrolling: touch;
+  -o-overflow-scrolling: touch;
+  -spec-overflow-scrolling: touch;
+  overflow-scrolling: touch; }
   .detail-overlay .content {
     max-width: 960px;
     margin: 20px auto;
@@ -199,10 +203,30 @@ section.gallery {
       height: auto !important;
       margin: 10px 0; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
+  header h1 {
+    font-size: 49px;
+    line-height: 40px; } }
+@media screen and (max-width: 720px) {
   .detail-overlay .content .shots img {
     max-width: 80%; }
   .detail-overlay .content .shots .row img {
     width: 80%; } }
+@supports (display: flex) {
+  section.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; }
+    section.gallery .cell {
+      margin: 10px;
+      width: calc(33.333333333% - 20px);
+      height: auto; }
+
+  @media screen and (max-width: 720px) {
+    section.gallery .cell {
+      width: calc(50% - 20px); } }
+  @media screen and (max-width: 480px) {
+    section.gallery .cell {
+      width: calc(100% - 20px); } } }
 
 /*# sourceMappingURL=style.css.map */

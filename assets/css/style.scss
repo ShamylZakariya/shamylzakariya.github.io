@@ -1,8 +1,12 @@
 @import "bourbon/bourbon";
 
+$medium-width: 720px;
+$narrow-width: 480px;
+
 $width-max: 960px;
 $vertical-spacing: 60px;
 $margin-gallery-cell: 10px;
+$margin-gallery-cell-double: 20px;
 
 $color-text: #2B3033;
 $color-link: #50E3C2;
@@ -57,32 +61,26 @@ header {
 	}
 
 	h2 {
-		margin: 0;
-		padding: 1em 0;
+		margin: 2em 0 1em 0;
+		padding: 0;
 		font-family: $font-body;
 		font-size: 14px;
 	}
 
 	ul {
-		margin: 0;
+		margin: 1em 0;
 		padding: 0;
 		li {
 			list-style: none;
 			display: inline-block;
 			margin-right: 2em;
+			line-height: 2em;
 
 			a {
 				font-weight: 700;
 				text-decoration: none;
 			}
 		}
-	}
-}
-
-@media screen and (max-width: 480px) {
-	header h1 {
-		font-size: 49px;
-		line-height: 40px;
 	}
 }
 
@@ -153,6 +151,7 @@ section.gallery {
 
 		> img {
 			width: 100%;
+			height: auto;
 			display: block;
 			cursor: pointer;
 		}
@@ -175,6 +174,8 @@ section.gallery {
 	overflow-y: scroll;
 	display: none;
 	opacity: 0;
+
+	@include prefixer(overflow-scrolling, touch, webkit moz ms o spec);
 
 	.content {
 		max-width: $width-max;
@@ -234,7 +235,7 @@ section.gallery {
 				max-width: 100%;
 				margin: $margin-gallery-cell;
 				height: auto !important;
-				box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+				box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 				vertical-align: top;
 			}
 
@@ -254,7 +255,14 @@ section.gallery {
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: $narrow-width) {
+	header h1 {
+		font-size: 49px;
+		line-height: 40px;
+	}
+}
+
+@media screen and (max-width: $medium-width) {
 	.detail-overlay .content .shots {
 		img {
 			max-width: 80%;
@@ -266,4 +274,34 @@ section.gallery {
 			}
 		}
 	}
+}
+
+// for browsers with flexbox, let's make gallery better OK?
+
+@supports (display:flex) {
+
+	section.gallery {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+
+		.cell {
+			margin: $margin-gallery-cell;
+			width: calc(33.333333333% - 20px);
+			height: auto;
+		}
+	}
+
+	@media screen and (max-width: $medium-width) {
+		section.gallery .cell {
+			width: calc(50% - 20px);
+		}
+	}
+
+	@media screen and (max-width: $narrow-width) {
+		section.gallery .cell {
+			width: calc(100% - 20px);
+		}
+	}
+
 }
