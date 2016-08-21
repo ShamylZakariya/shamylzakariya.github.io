@@ -58,7 +58,8 @@ header {
 section.detail {
   margin-top: 60px; }
   section.detail h2 {
-    font-size: 34px; }
+    font-size: 2em;
+    line-height: 1.1em; }
   section.detail ul {
     margin: 0;
     padding: 0; }
@@ -131,7 +132,7 @@ section.gallery {
   opacity: 0; }
   .detail-overlay .content {
     max-width: 960px;
-    margin: 30px auto;
+    margin: 20px auto;
     padding: 0 20px;
     position: relative; }
     .detail-overlay .content a.close {

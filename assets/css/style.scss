@@ -90,7 +90,8 @@ section.detail {
 
 	margin-top: $vertical-spacing;
 	h2 {
-		font-size: 34px;
+		font-size: 2em;
+		line-height: 1.1em;
 	}
 
 	ul {
@@ -177,7 +178,7 @@ section.gallery {
 
 	.content {
 		max-width: $width-max;
-		margin: $vertical-spacing/2 auto;
+		margin: $vertical-spacing/3 auto;
 		padding: 0 20px;
 		position: relative;
 
