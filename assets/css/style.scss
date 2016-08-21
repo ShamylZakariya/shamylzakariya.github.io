@@ -141,6 +141,7 @@ section.gallery {
 		overflow: hidden;
 		display: block;
 		float: left;
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 
 		// bourbon's @include transition is missing, wtf
 		@include prefixer(transition, transform 0.5s, webkit moz ms o spec);
