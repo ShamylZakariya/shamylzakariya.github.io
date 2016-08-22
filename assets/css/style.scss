@@ -84,6 +84,24 @@ header {
 	}
 }
 
+div.personal {
+	@include clearfix();
+
+	.col {
+		width: 50%;
+		float: left;
+
+		&:first-child > * {
+			margin-right: 2*$margin-gallery-cell !important;
+		}
+
+		&:last-child > *{
+			margin-left: 2*$margin-gallery-cell !important;
+		}
+	}
+}
+
+
 section.detail {
 
 	margin-top: $vertical-spacing;
@@ -251,6 +269,7 @@ section.gallery {
 
 		.shots {
 			font-size: 0;
+			margin-top: $vertical-spacing/2;
 			margin-left: -$margin-gallery-cell;
 			margin-right: -$margin-gallery-cell;
 
@@ -287,6 +306,19 @@ section.gallery {
 }
 
 @media screen and (max-width: $medium-width) {
+
+	div.personal .col {
+		display: block;
+		float: none;
+		width: 100%;
+
+
+		&:first-child > *,
+		&:last-child > *{
+			margin-left: 0 !important;
+			margin-right: 0 !important;
+		}
+	}
 }
 
 //
