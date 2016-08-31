@@ -279,13 +279,13 @@ section.gallery {
 				height: auto;
 				display: inline-block;
 				vertical-align: top;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 			}
 
 			img {
 				display: block;
 				width: 100%;
 				height: auto !important;
-				box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 			}
 		}
 
@@ -322,7 +322,8 @@ section.gallery {
 }
 
 //
-// for modern browsers: we'll use display:flex and calc() to make things nicer
+// for modern browsers: we'll use display:flex and calc() to make things nicer.
+// I'm assuming if flex is supported, so is column-count.
 //
 
 @supports (display:flex) {
@@ -339,30 +340,47 @@ section.gallery {
 		}
 	}
 
+	// use css columns to emulate masonry.js look
 	.detail-overlay .content .shots {
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: row;
+		margin-left: 0;
+		margin-right: 0;
+		line-height: 0;
+		-webkit-column-count: 3;
+		-webkit-column-gap:   $margin-gallery-cell;
+		-moz-column-count:    3;
+		-moz-column-gap:      $margin-gallery-cell;
+		column-count:         3;
+		column-gap:           $margin-gallery-cell;
 
 		> .cell {
-			margin: $margin-gallery-cell;
-			width: calc(33.333333333% - 20px);
-			height: auto;
+			margin: 0 0 $margin-gallery-cell 0;
+			width: 100% !important;
+			height: auto !important;
 		}
 	}
 
 
 	@media screen and (max-width: $medium-width) {
-		section.gallery > .cell,
-		.detail-overlay .content .shots > .cell{
+		section.gallery > .cell {
 			width: calc(50% - 20px);
+		}
+
+		.detail-overlay .content .shots {
+			-webkit-column-count: 2;
+			-moz-column-count:    2;
+			column-count:         2;
 		}
 	}
 
 	@media screen and (max-width: $narrow-width) {
-		section.gallery > .cell,
-		.detail-overlay .content .shots > .cell {
+		section.gallery > .cell {
 			width: calc(100% - 20px);
+		}
+
+		.detail-overlay .content .shots {
+			-webkit-column-count: 1;
+			-moz-column-count:    1;
+			column-count:         1;
 		}
 	}
 
