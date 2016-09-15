@@ -1,35 +1,33 @@
 Shamyl Zakariya
-536 25th Ave S
-Seattle WA, 98121
+534 25th Ave S
+Seattle WA, 98144
 
-http://shamylzakariya.github.io
-shamyl@gmail.com
+http://shamylzakariya.github.io/
+mailto:shamyl@gmail.com
 (703) 851-4193
 
-I strive to build applications and websites which people will find delightful to use. I'm a graphic designer, but I'm also a programmer and I live and breathe code. In my work, behavior is design (and design is behavior), so designing, building, and prototyping simultaneously is paramount. 
+I strive to build products which people will find delightful to use. I'm a graphic designer, but I'm also a programmer and I live and breathe code as much as design. In my work, behavior is design (and design is behavior), so designing, building, and prototyping simultaneously is paramount. 
 
-This means I spend as much time in Photoshop, Illustrator and Sketch as I do in TextMate, Eclipse, Xcode and the terminal. By day I'm primarily responsible for web design, print design, and Javascript programming; but in my free time I write graphics code in C++/OpenGL and apps/games/interactive doodads in C/ObjectiveC/Java/NodeJS and so on.
+This means I spend as much time in Photoshop, Illustrator and Sketch as I do in TextMate, IntelliJ IDEA, Xcode and the terminal. By day I'm primarily responsible for logo design, web design, print design, user interface design, and HTML/CSS/JavaScript development; but in my free time I write graphics code in C++/OpenGL and apps/games/interactive doodads in C/C++/Objective-C/Swift/Java/Node and so on.
 
 
 Career:
-
 1997-1999: Darden School of Business, Charlottesville VA
 Graphic designer, programmer
 
 At Darden I designed & built educational software in Macromedia Flash and Director. 
 
-1999-present: APCO Worldwide, Washington DC (later Seattle, WA)
+1999-2016: APCO Worldwide, Washington DC (later Seattle, WA)
 Art director, client-side web programmer
 
-At APCO Worldwide I'm responsible for working with clients to design websites, print materials, and mobile applications. When my responsibility includes building them, I build them using modern standards and practices, and I maintain and update them as time moves on.
+At APCO Worldwide I was responsible for working with clients to design logos, websites, print materials, web applications, and native mobile applications. Further, I did UX sketches and refinement, and prototyped user interface interaction. When my responsibility included building the final product, I built it using modern standards and practices appropriate to the platform; finally, I maintained and updated the products over time.
 
 
 Daily Skills:
-
 Photoshop
 Illustrator
 Sketch
-C/ObjectiveC/Swift/C++/Java/Javascript
+C/C++/Objective-C/Swift/Java/JavaScript
 Git,Subversion
 
 Occasional Skills:
@@ -37,6 +35,5 @@ Familiarity with InDesign
 Familiarity with Python & Ruby
 
 Education:
-
 Art, University of Virginia, class of 1999
-Lifetime of reading, building, experimenting and trying to make neat things
+A lifetime of reading, building, experimenting and trying to make neat things
