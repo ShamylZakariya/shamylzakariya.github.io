@@ -8,15 +8,19 @@ $vertical-spacing: 60px;
 $margin-gallery-cell: 10px;
 $margin-gallery-cell-double: 20px;
 
-$color-text: #2B3033;
-$color-link: #50E3C2;
+$color-green: #50E3C2;
+$color-slate: #2B3033;
+
+$color-text: $color-slate;
+$color-link: $color-green;
 $font-title: 'Abril Fatface', cursive;
 $font-body: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 $font-body-size: 1.1em;
 
+
 body {
 	background: white;
-	margin: 0 20px $vertical-spacing 20px;
+	margin: 0 0 $vertical-spacing 0;
 	padding: 0;
 	font-family: $font-body;
 	font-size: $font-body-size;
@@ -37,7 +41,7 @@ h1, h2, h3, h4, h5 {
 
 .main {
 	max-width: $width-max;
-	margin: 0 auto;
+	margin: 20px auto;
 }
 
 a {
@@ -53,7 +57,7 @@ header {
 		font-size: 98px;
 		line-height: 88px;
 		margin: 0;
-		padding: $vertical-spacing 0 0 0;
+		padding: 2*$vertical-spacing 0 0 0;
 
 		.firstname, .lastname {
 			display: block;
@@ -95,12 +99,30 @@ div.personal {
 			margin-right: 2*$margin-gallery-cell !important;
 		}
 
-		&:last-child > *{
+		&:last-child > * {
 			margin-left: 2*$margin-gallery-cell !important;
 		}
 	}
 }
 
+section.looking-for-work {
+	background-color: lighten($color-green, 30%);
+	padding: 1em 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+
+	p {
+		font-size: 1.1em;
+		max-width: $width-max;
+		margin: 0 auto;
+		text-align: center;
+		color: darken($color-green, 15%);
+	}
+
+}
 
 section.detail {
 
@@ -193,6 +215,7 @@ section.gallery {
 	overflow-y: scroll;
 	display: none;
 	opacity: 0;
+	z-index: 2;
 
 	@include prefixer(overflow-scrolling, touch, webkit moz ms o spec);
 
@@ -312,9 +335,8 @@ section.gallery {
 		float: none;
 		width: 100%;
 
-
 		&:first-child > *,
-		&:last-child > *{
+		&:last-child > * {
 			margin-left: 0 !important;
 			margin-right: 0 !important;
 		}
@@ -346,11 +368,11 @@ section.gallery {
 		margin-right: 0;
 		line-height: 0;
 		-webkit-column-count: 3;
-		-webkit-column-gap:   $margin-gallery-cell;
-		-moz-column-count:    3;
-		-moz-column-gap:      $margin-gallery-cell;
-		column-count:         3;
-		column-gap:           $margin-gallery-cell;
+		-webkit-column-gap: $margin-gallery-cell;
+		-moz-column-count: 3;
+		-moz-column-gap: $margin-gallery-cell;
+		column-count: 3;
+		column-gap: $margin-gallery-cell;
 
 		> .cell {
 			margin: 0 0 $margin-gallery-cell 0;
@@ -359,7 +381,6 @@ section.gallery {
 		}
 	}
 
-
 	@media screen and (max-width: $medium-width) {
 		section.gallery > .cell {
 			width: calc(50% - 20px);
@@ -367,8 +388,8 @@ section.gallery {
 
 		.detail-overlay .content .shots {
 			-webkit-column-count: 2;
-			-moz-column-count:    2;
-			column-count:         2;
+			-moz-column-count: 2;
+			column-count: 2;
 		}
 	}
 
@@ -379,8 +400,8 @@ section.gallery {
 
 		.detail-overlay .content .shots {
 			-webkit-column-count: 1;
-			-moz-column-count:    1;
-			column-count:         1;
+			-moz-column-count: 1;
+			column-count: 1;
 		}
 	}
 

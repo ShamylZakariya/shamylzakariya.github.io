@@ -1,7 +1,7 @@
 @charset "UTF-8";
 body {
   background: white;
-  margin: 0 20px 60px 20px;
+  margin: 0 0 60px 0;
   padding: 0;
   font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 1.1em;
@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5 {
 
 .main {
   max-width: 960px;
-  margin: 0 auto; }
+  margin: 20px auto; }
 
 a {
   color: #50E3C2;
@@ -32,7 +32,7 @@ header {
     font-size: 98px;
     line-height: 88px;
     margin: 0;
-    padding: 60px 0 0 0; }
+    padding: 120px 0 0 0; }
     header h1 .firstname, header h1 .lastname {
       display: block; }
   header h2 {
@@ -63,6 +63,21 @@ div.personal .col {
     margin-right: 20px !important; }
   div.personal .col:last-child > * {
     margin-left: 20px !important; }
+
+section.looking-for-work {
+  background-color: #d4f8f0;
+  padding: 1em 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1; }
+  section.looking-for-work p {
+    font-size: 1.1em;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    color: #20c7a1; }
 
 section.detail {
   margin-top: 60px; }
@@ -141,6 +156,7 @@ section.gallery {
   overflow-y: scroll;
   display: none;
   opacity: 0;
+  z-index: 2;
   -webkit-overflow-scrolling: touch;
   -moz-overflow-scrolling: touch;
   -ms-overflow-scrolling: touch;
