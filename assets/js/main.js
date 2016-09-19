@@ -5,6 +5,7 @@
 	var $body = $('body');
 	var $galleryItems = $('#gallery > .cell');
 	var $overlayRoot;
+	var currentItemId;
 
 	/**
 	 * Process the detail DOM node, swapping out data-lazy-src, etc parameters with proper params
@@ -67,6 +68,8 @@
 	 */
 	function showOverlay(id, $detailNode, animate) {
 		animate = animate == undefined ? true : animate;
+		currentItemId = id;
+
 		if (!$overlayRoot) {
 
 			$overlayRoot = $('<div>', {class: 'detail-overlay'});
@@ -119,6 +122,7 @@
 	 */
 	function hideOverlay(animate) {
 		animate = animate == undefined ? true : animate;
+		currentItemId = null;
 		if (!!$overlayRoot) {
 			history.pushState(null, null, '/');
 			document.title = documentTitleBase;
@@ -172,7 +176,21 @@
 	document.onkeydown = function (e) {
 		switch (e.keyCode) {
 			case 27:
+				// esc key
 				hideOverlay();
+				break;
+			case 37:
+				// left arrow key
+				if (currentItemId) {
+					prevItem(currentItemId)();
+				}
+				break;
+			case 39:
+				// right arrow key
+				if (currentItemId){
+					nextItem(currentItemId)();
+				}
+				break;
 		}
 	};
 
