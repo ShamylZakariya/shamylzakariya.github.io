@@ -4,7 +4,7 @@ Seattle WA, 98144
 
 http://shamylzakariya.github.io/
 mailto:shamyl@gmail.com
-tel:(703) 851-4193
+(703) 851-4193
 
 I strive to build products which people will find delightful to use. I'm a graphic designer, but I'm also a programmer and I live and breathe code as much as design. In my work, behavior is design (and design is behavior), so designing, building, and prototyping simultaneously is paramount. 
 
@@ -17,17 +17,20 @@ Graphic designer, programmer
 
 At Darden I designed & built educational software in Macromedia Flash and Director. 
 
+1997: University of Virginia’s Virtual Reality lab, under Randy Pausch
+3D Modeler, Texture Mapper
+
 1999-2016: APCO Worldwide, Washington DC (later Seattle, WA)
 Art director, client-side web programmer
 
 At APCO Worldwide I was responsible for working with clients to design logos, websites, print materials, web applications, and native mobile applications. Further, I did UX sketches and refinement, and prototyped user interface interaction. When my responsibility included building the final product, I built it using modern standards and practices appropriate to the platform; finally, I maintained and updated the products over time.
 
+2013-2015: ConsultPro (a startup)
+I designed and built an iPad app for hair salons. The app helped stylists manage clients and to draw schematics of how hair styles would be cut from a technical standpoint. I was responsible for UX, UI design, and all development - from the iPad app to the network sync backend. The app never took off, but it worked beautifully.
 
 Daily Skills:
-Photoshop
-Illustrator
-Sketch
-C/C++/Objective-C/Swift/Java/JavaScript
+Photoshop, Illustrator, Sketch
+C, C++, Objective-C, Swift, Java, JavaScript, HTML5, Android SDK, iOS SDK
 Git, Subversion
 
 Android Development:
@@ -35,6 +38,9 @@ The basics (e.g., Android SDK + appcompat), as well as popular third party APIs 
 
 iOS Development:
 The basics (e.g., iOS SDK), Storyboards, AutoLayout (via IB and code), various Cocoapod such as AlamoFire, Realm, etc. I’ve written iOS apps in ObjectiveC back in the day, and pure Swift more recently. See my Github for some iOS apps.
+
+Personal Work:
+In my personal work I’ve developed robotics simulations, simple behavioral-based locomotion control systems, 2D & 3D visualizations in OpenGL, and more, in lower level languages like C and C++. I’ve written 2D and 3D games in OpenGL. I’ve also built micro-service back ends for web applications in Node and Spark Java (a Node-like Java framework built on top of Jetty).
 
 Occasional Skills:
 Familiarity with InDesign
