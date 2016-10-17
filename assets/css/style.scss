@@ -80,11 +80,32 @@ header {
 			display: inline-block;
 			margin-right: 2em;
 			line-height: 2em;
+			font-weight: 700;
+			color: $color-link;
+			position: relative;
 
 			a {
-				font-weight: 700;
 				text-decoration: none;
 			}
+		}
+	}
+
+	ul.popup {
+		margin: 0;
+		display: none;
+		position: absolute;
+		background: rgba(30,30,30,0.9);
+
+		li {
+			display: block;
+			margin: 0.5em 1em;
+		}
+	}
+
+	li:hover {
+		ul.popup {
+			display: block;
+			z-index: 500;
 		}
 	}
 }

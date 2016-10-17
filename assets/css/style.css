@@ -48,10 +48,23 @@ header {
       list-style: none;
       display: inline-block;
       margin-right: 2em;
-      line-height: 2em; }
+      line-height: 2em;
+      font-weight: 700;
+      color: #50E3C2;
+      position: relative; }
       header ul li a {
-        font-weight: 700;
         text-decoration: none; }
+  header ul.popup {
+    margin: 0;
+    display: none;
+    position: absolute;
+    background: rgba(30, 30, 30, 0.9); }
+    header ul.popup li {
+      display: block;
+      margin: 0.5em 1em; }
+  header li:hover ul.popup {
+    display: block;
+    z-index: 500; }
 
 div.personal::after {
   clear: both;
