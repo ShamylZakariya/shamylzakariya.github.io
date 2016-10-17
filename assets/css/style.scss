@@ -41,6 +41,7 @@ h1, h2, h3, h4, h5 {
 
 .main {
 	max-width: $width-max;
+	padding: 0 20px;
 	margin: 20px auto;
 }
 
@@ -107,7 +108,7 @@ div.personal {
 
 section.looking-for-work {
 	background-color: lighten($color-green, 30%);
-	padding: 1em 0;
+	padding: 1em 20px;
 	position: fixed;
 	top: 0;
 	left: 0;

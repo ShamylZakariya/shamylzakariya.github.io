@@ -18,6 +18,7 @@ h1, h2, h3, h4, h5 {
 
 .main {
   max-width: 960px;
+  padding: 0 20px;
   margin: 20px auto; }
 
 a {
@@ -66,7 +67,7 @@ div.personal .col {
 
 section.looking-for-work {
   background-color: #d4f8f0;
-  padding: 1em 0;
+  padding: 1em 20px;
   position: fixed;
   top: 0;
   left: 0;
