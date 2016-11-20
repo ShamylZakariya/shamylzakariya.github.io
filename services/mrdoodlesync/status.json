@@ -1,3 +1,4 @@
 {
-	"discontinued": "MrDoodle sync services have been discontinued."
+	"isDiscontinued":false,
+	"discontinuedMessage": "MrDoodle sync services have been discontinued."
 }
