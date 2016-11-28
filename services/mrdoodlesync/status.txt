@@ -1,0 +1,5 @@
+{
+	"serverStatus": ( 0: Running | 1: Scheduled Downtime | 2: Discontinued )
+	"serverStatusMessage": [String] [optional] e.g. "MrDoodle sync services are down for scheduled downtime",
+	"alertMessage": String [optional]
+}

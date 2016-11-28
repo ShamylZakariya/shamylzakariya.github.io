@@ -1,6 +1,5 @@
 {
-	"isDiscontinued": false,
-	"discontinuedMessage": "MrDoodle sync services have been discontinued.",
-	"isAlert": false,
-	"alertMessage": "MrDoodle sync services are currently in scheduled downtime and should be back up shortly"
+	"serverStatus": 0,
+	"serverStatusMessage": null,
+	"alertMessage": null
 }
