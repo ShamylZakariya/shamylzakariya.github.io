@@ -50,6 +50,10 @@ a {
 	text-decoration: underline;
 }
 
+.hidden {
+	display: none;
+}
+
 header {
 	max-width: $width-max;
 	margin: 0 auto;
