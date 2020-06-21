@@ -6,45 +6,38 @@ http://shamylzakariya.github.io/
 mailto:shamyl@gmail.com
 (703) 851-4193
 
-I'm a graphic designer, a UI designer, UI prototyper, and a front-end programmer. 
-I live and breathe code as much as design. In my work, behavior is design (and design is behavior), so designing, building, and prototyping simultaneously is paramount. 
-I spend as much time in Photoshop, Illustrator and Sketch as I do in an IDE or the terminal. In my professional work I’ve been responsible for designing, testing and building websites, web applications, data visualizations, games, mobile applications and more. 
-In my free time I write graphics code and simulations in C++/OpenGL and apps/games/interactive doodads in C/C++/Objective-C/Swift/Java/Node and so on.
+I'm a C, C++, Objective-C, C#, Java, Swift, Python, OpenGL/GLSL and anything else programmer focusing on user experience, graphics, performance, mobile apps and AR/VR.
 
-Career:
-1997-1999: Graphic Designer & Programmer
-Darden School of Business, Charlottesville VA.
-At Darden I designed & built educational software in Macromedia Flash and Director. 
+2019-present: Bluehawk, LLC
+Software Engineer, contracted to Google
+In my work for Google I have been responsible for building a tool for identifying the nuances and corner cases of Android performance, to aid in making Android a better platform for games. In this role I've been responsible for designing and building the testing framework, data reporting/analysis, and a suite of tests which exercise OpenGL, multi-threading strategies, and other performance-oriented tests relevant to game engine designers.
 
-1997: 3D Modeler, Texture Mapper
-University of Virginia’s Virtual Reality lab, under Randy Pausch
-
-1999-2016: Art Director, Front-End Developer
-APCO Worldwide, Washington DC (later Seattle, WA)
-At APCO Worldwide I was responsible for working with clients to prototype, test, design and build websites, web applications, data visualizations, games, and native mobile applications.
-
-2013-2015: UX Designer, UI Designer, Full-Stack Developer 
-ConsultPro (a startup)
-For ConsultPro I was responsible for UX design, UX testing, UI design, iOS development and backend network sync API design and implementation.
-
-Daily Skills:
-Photoshop, Illustrator, Sketch
-C, C++, Objective-C, Swift, Java, JavaScript, HTML5, Android SDK, iOS SDK
-Git, Subversion
-
-Android Development:
-The basics (e.g., Android SDK + appcompat), as well as popular third party APIs such as OkHTTP, Retrofit, Butterknife, Realm, etc. I have a few open source Android projects, including a couple libraries on Github accessible via jcenter.
-
-iOS Development:
-The basics (e.g., iOS SDK), Storyboards, AutoLayout (via IB and code), various Cocoapod such as AlamoFire, Realm, etc. I’ve written iOS apps in ObjectiveC back in the day, and pure Swift more recently. See my Github for some iOS apps.
+2016-2019: Vulcan, Inc
+Senior Software Engineer, Rapid Prototyping
+At Vulcan I was responsible for prototyping Paul Allen's vision with a goal towards productization and IP generation.
+- Augmented reality in-stadium fan experience for the Seahawks for AR glasses and phones
+- Android-based data collection/distribution system for health workers in developing nations to monitor trends to detect possible outbreaks
+- Hololens-based security glasses experience (ML backend) to aid personnel in recognizing persons of interest on a property
+- Indoor location tracking for venues to improve customer experience while preserving user privacy
+- Developer simulator for Vulcan's Holodome
+- Input calibration tool for Vulcan's Holodome installations
+- Multi-camera synthesis for simulating “body presence” in virtual reality
 
 Personal Work:
-In my personal work I’ve developed robotics simulations, simple behavioral-based locomotion control systems, 2D & 3D visualizations in OpenGL, and more, in lower level languages like C and C++. I’ve written 2D and 3D games in OpenGL. I’ve also built micro-service back ends for web applications in Node and Spark Java (a Node-like Java framework built on top of Jetty).
+In my personal work I've developed robotics simulations (simple behavioral-based locomotion control systems with 2D & 3D visualizations in OpenGL) in C++ with hardware abstraction to enable the models to talk to real hardware. I've written several 2D and 3D games and game engines in C++/OpenGL. I've also built micro-service back ends for web applications in Node and Spark Java (a Node-like Java framework built on top of Jetty).
 
-Occasional Skills:
-Familiarity with InDesign
-Familiarity with Python & Ruby
+1999-2016: APCO Worldwide
+Art Director, Front-End Developer
+At APCO Worldwide I was responsible for working with clients to prototype, test, design and build websites, web applications, data visualizations, online games, and native mobile applications.
+
+2013-2015: ConsultPro (a failed startup)
+UX Designer, UI Designer, Full-Stack Developer
+For ConsultPro I was responsible for UX design, UX testing, UI design, iOS development and backend network sync API design and implementation.
+
+1997-1999: Darden School of Business, Charlottesville VA
+Graphic Designer & Programmer
+At Darden I designed & built educational software in Macromedia Flash and Director.
 
 Education:
 Art, University of Virginia, class of 1999
-A lifetime of reading, building, experimenting and trying to make neat things
+A lifetime of reading, building, experimenting and trying to make interesting things

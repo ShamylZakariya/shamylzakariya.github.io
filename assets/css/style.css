@@ -108,6 +108,11 @@ section.detail {
       list-style: none;
       margin: 0;
       padding: 0.5em 0; }
+      section.detail ul li ul li {
+        font-size: 0.9em;
+        margin-left: 1.1em;
+        padding-left: 0em;
+        list-style: disc; }
   section.detail .date {
     font-weight: bold; }
   section.detail .what {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
@@ -9,487 +10,401 @@
 	<title>Shamyl Zakariya</title>
 
 </head>
+
 <body>
 
-<section class="looking-for-work hidden">
-	<p>If you're looking for somebody with <strong>years</strong> of real world experience designing, prototyping, &amp; coding real world products &mdash; it so happens I'm looking for work!</p>
-</section>
-
-
-<div class="main">
-	<header>
-		<h1><span class="firstname">Shamyl</span><span class="lastname">Zakariya</span></h1>
-		<h2>Is a graphic designer and developer<br/>living in Seattle, Wa</h2>
-		<ul>
-			<li>Résumé
-				<ul class="popup">
-					<li><a href="shamyl-zakariya-resume.txt">TXT</a></li>
-					<li><a href="shamyl-zakariya-resume.docx">DOC</a></li>
-					<li><a href="shamyl-zakariya-resume.pdf">PDF</a></li>
-				</ul>
-			</li>
-			<li><a href="https://github.com/ShamylZakariya/">Github</a></li>
-			<li><a href="https://twitter.com/ShamylZakariya">@ShamylZakariya</a></li>
-			<li><a href="mailto:shamyl@gmail.com">shamyl@gmail.com</a></li>
-		</ul>
-	</header>
-
-
-	<section class="gallery" id="gallery">
-
-		<div class="cell" id="surfacer">
-			<img src="assets/gallery/sfr-0.png" width="538" height="538"/>
-			<div class="detail">
-				<h1>Surfacer</h1>
-				<p><a href="https://github.com/ShamylZakariya/Surfacer">Source code on Github</a></p>
-				<p>A 2d side-scrolling physics-based game which I never finished. It no longer even compiles, because it
-					depends on pre-C++0x11 tr1 libraries. I plan on attacking it and getting it running again, because
-					it's too <em>neat</em> to let succomb to bitrot.</p>
-				<h2>Features</h2>
-				<ul>
-					<li>Destructible terrain, where cut-off geometry is dynamic, and part of gameplay</li>
-					<li>Soft-body monsters! Grubs! Jellies! Worms! Grippy tentacles! Gross stuff!</li>
-					<li>Fluids</li>
-					<li>Quaint fullscreen shader effects</li>
-					<li>SVG-based geometry representation of monsters, game items, and player, allowing me to design
-						them in Illustrator
-					</li>
-				</ul>
-
-				<div class="shots">
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/sfr-1.png" width="800" height="600"/>
-					</div>
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/sfr-2.png" width="800" height="600"/>
-					</div>
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/sfr-3.png" width="800" height="600"/>
-					</div>
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/sfr-4.png" width="800" height="600"/>
-					</div>
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/sfr-5.png" width="800" height="600"/>
-					</div>
-				</div>
-
-			</div>
-		</div>
-
-
-		<div class="cell" id="sgf-sre">
-			<img src="assets/gallery/sre-0.png" width="362" height="362"/>
-			<div class="detail">
-				<h1>SGF / SRE</h1>
-				<p>SimpleGameFramework &amp; SimpleRenderingEngine: 3D Game framework written between 2007 and 2010.
-					Written from ground-up ( as-in, I started with an
-					empty project, and wrote it all myself) in C++ and some ObjectiveC, and with rendering in
-					OpenGL/GLSL.</p>
-				<h2>Features</h2>
-				<ul>
-					<li>Physics, using the OpenDynamicsEngine and Bullet, as pluggable modules</li>
-					<li>Shadow mapping for directional (using CSM), point and spot lights (using depth cubemaps), with
-						efficient visibility
-						culling of light volumes
-					</li>
-					<li>Quirky materials framework
-					</li>
-					<li>Voxel-based terrain, editable in real-time, with Lindstrom-Turk edge-collapse mesh optimization,
-						uzing the <a href="https://www.cgal.org">CGAL library.</a></li>
-					<li>Threaded Python scripting for the physics system - mainly used to make autonomous robotics
-						simulations that can query their environment and send commands to servos/motors/actuators/etc
-					</li>
-					<li>Automatic environmental greebling details like grass, decals, etc using 3d perlin noise to keep
-						distributions naturalistic
-					</li>
-				</ul>
-
-				<div class="shots">
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/sre-1.png" width="900" height="500"/>
-					</div>
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/sre-2.png" width="900" height="500"/>
-					</div>
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/sre-3.png" width="800" height="622"/>
-					</div>
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/sre-4.png" width="900" height="522"/>
-					</div>
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/sre-5.png" width="900" height="522"/>
-					</div>
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/sre-6.png" width="900" height="522"/>
-					</div>
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/sre-7.png" width="800" height="422"/>
-					</div>
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/sre-8.png" width="937" height="514"/>
-					</div>
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/sre-9.png" width="937" height="514"/>
-					</div>
-				</div>
-
-			</div>
-		</div>
-
-		<div class="cell" id="squizit">
-			<img src="assets/gallery/sq-0.png" width="1024" height="1024"/>
-			<div class="detail">
-				<h1>Squizit</h1>
-				<p><a href="https://github.com/ShamylZakariya/Squizit">Source code on Github</a></p>
-				<p>iOS implementation of classic dadaist <a href="https://en.wikipedia.org/wiki/Exquisite_corpse">Exquisite
-					Corpse</a> game.</p>
-
-
-				<div class="shots">
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/sq-1.png" width="1536" height="2048"/>
-					</div>
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/sq-2.png" width="2048" height="1536"/>
-					</div>
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/sq-3.png" width="2048" height="1536"/>
-					</div>
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/sq-4.png" width="2048" height="1536"/>
-					</div>
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/sq-5.png" width="2048" height="1536"/>
-					</div>
-				</div>
-
-			</div>
-		</div>
-
-		<div class="cell" id="illus-1">
-			<img src="assets/gallery/scope-0.png" width="432" height="432"/>
-			<div class="detail">
-				<h1>Various Sciencey Illustrations</h1>
-				<p>I know a few scientific researchers, and sometimes I do illustrations & animations for their
-					papers.</p>
-
-				<div class="shots">
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/scope-1.png" width="760" height="550"/>
-					</div>
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/scope-2.png" width="760" height="550"/>
-					</div>
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/scope-3.png" width="760" height="550"/>
-					</div>
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/med-5.png" width="400" height="400"/>
-					</div>
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/med-6.png" width="400" height="400"/>
-					</div>
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/hyp-1.png" width="1024" height="768"/>
-					</div>
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/med-1.png" width="799" height="600"/>
-					</div>
-				</div>
-
-			</div>
-		</div>
-
-		<div class="cell" id="a-mile-in-her-shoes">
-			<img src="assets/gallery/amihs-0.png" width="748" height="748"/>
-			<div class="detail">
-				<h1>Book Cover: &ldquo;A Mile in Her Shoes&rdquo;</h1>
-
-				<div class="shots">
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/amihs-1.png" width="1650" height="2400"/>
-					</div>
-				</div>
-
-			</div>
-		</div>
-
-
-		<div class="cell" id="apco">
-			<img src="assets/gallery/apco-0.png" width="600" height="600"/>
-			<div class="detail">
-				<h1>APCO Worldwide</h1>
-				<p>Website design for my employer, <a href="http://www.apcoworldwide.com">APCO Worldwide</a>.</p>
-
-				<div class="shots">
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/apco-1.jpg" width="1440" height="1484"/>
-					</div>
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/apco-3.png" width="1440" height="1772"/>
-					</div>
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/apco-2.jpg" width="1440" height="2480"/>
-					</div>
-				</div>
-
-			</div>
-		</div>
-
-		<div class="cell" id="vax-pack-hero">
-			<img src="assets/gallery/vph-0.png" width="1577" height="1577"/>
-			<div class="detail">
-				<h1>Vax Pack Hero</h1>
-				<p>An educational game for the <a href="http://www.chop.edu/">Children&rsquo;s Hospital of
-					Philadelphia</a>.
-
-				<h2>Features</h2>
-				<ul>
-					<li><a href="https://github.com/ShamylZakariya/DungeonBuilder">Random level generation</a></li>
-					<li>Automatic monster spawning based on the capabilities of the player</li>
-					<li>Cute pixelated graphics</li>
-				</ul>
-
-				<div class="shots">
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/vph-1.png" width="2856" height="1607"/>
-					</div>
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/vph-2.png" width="2856" height="1607"/>
-					</div>
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/vph-3.png" width="2856" height="1607"/>
-					</div>
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/vph-4.png" width="2856" height="1607"/>
-					</div>
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/vph-5.png" width="2856" height="1607"/>
-					</div>
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/vph-6.png" width="2856" height="1607"/>
-					</div>
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/vph-7.png" width="2856" height="1607"/>
-					</div>
-
-				</div>
-
-			</div>
-		</div>
-
-
-		<div class="cell" id="apco-cb">
-			<img src="assets/gallery/apco-cb-0.png" width="600" height="600"/>
-			<div class="detail">
-				<h1>APCO Champion Brand</h1>
-				<p>A very illustrative site, whimsical and fun. The build uses a dynamic tiled background (approx 130
-					tiles), panning across a large spatial map, loading tiles on-demand using a visibility-based
-					priority queue. Building the site required me to write a tiling tool in C++, a simple
-					google-maps-like tiling engine, and a smoothing vector path traversing system. And the site's fully
-					responsive, to boot!</p>
-
-				<video width="1642" height="1174" controls data-lazy-poster="assets/gallery/apco-cb-video.jpg">
-					<source src="assets/gallery/apco-cb-video.mp4" type="video/mp4">
-					<source src="assets/gallery/apco-cb-video.ogv" type="video/ogg">
-					<img data-="assets/gallery/apco-cb-1.png"/>
-				</video>
-
-			</div>
-		</div>
-
-		<div class="cell" id="cnl-app">
-			<img src="assets/gallery/cnl-icon.png" width="735" height="735"/>
-			<div class="detail">
-				<h1>CNL Securities app (Android, iOS)</h1>
-				<p>Mobile app developed for CNL Securities, providing full access to their content. I was responsible for design, UX and implementation.</p>
-
-				<h2>Features</h2>
-				<ul>
-					<li>Appropriate UI for phones and tablets</li>
-					<li>Briefcase functionality for offline content access</li>
-					<li>Shopping-cart-like functionality for ordering print copies of articles</li>
-				</ul>
-
-				<p>Available on <a href="https://play.google.com/store/apps/details?id=com.cnl.cnlsecurities">Google Play</a>
-					&amp; <a href="https://itunes.apple.com/us/app/cnl-securities/id1017146862?mt=8">iTunes</a></p>
-
-				<div class="shots">
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/cnl-homescreen-android.png" width="1080" height="1920"/>
-					</div>
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/cnl-homescreen-drawer-android.png" width="1080" height="1920"/>
-					</div>
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/cnl-search-android.png" width="1080" height="1920"/>
-					</div>
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/cnl-print-request-android.png" width="1080" height="1920"/>
-					</div>
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/cnl-homescreen-iphone.png" width="640" height="1136"/>
-					</div>
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/cnl-homescreen-ipad.png" width="1536" height="2048"/>
-					</div>
-					<div class="cell">
-						<img data-lazy-src="assets/gallery/cnl-briefcase-ipad.png" width="1536" height="2048"/>
-					</div>
-
-				</div>
-
-			</div>
-		</div>
-
+	<section class="looking-for-work hidden">
+		<p>If you're looking for somebody with <strong>years</strong> of real world experience designing, prototyping,
+			&amp; coding real world products &mdash; it so happens I'm looking for work!</p>
 	</section>
 
-	<div class="personal" id="cv">
-		<div class="col">
-			<section class="detail">
-				<h2>Skills</h2>
 
-				<ul>
-					<li>Photoshop, Illustrator, Sketch.app, Pen/Paper</li>
-					<li>C, C++, Objective-C, Swift, Python, Java (for Android and server), Javascript (client and server), OpenGL/GLSL,
-						HTML, CSS/SASS
-					</li>
-					<li>Web design, interactive web client-side programming, UI/UX design, &amp; some experience with print,
+	<div class="main">
+		<header>
+			<h1><span class="firstname">Shamyl</span><span class="lastname">Zakariya</span></h1>
+			<h2>Is a developer and graphic designer<br />living in Seattle, Wa</h2>
+			<ul>
+				<li>Résumé
+					<ul class="popup">
+						<li><a href="shamyl-zakariya-resume.txt">TXT</a></li>
+						<li><a href="shamyl-zakariya-resume.docx">DOC</a></li>
+						<li><a href="shamyl-zakariya-resume.pdf">PDF</a></li>
+					</ul>
+				</li>
+				<li><a href="https://github.com/ShamylZakariya/">Github.com/ShamylZakariya</a></li>
+				<li><a href="https://twitter.com/ShamylZakariya">@ShamylZakariya</a></li>
+				<li><a href="mailto:shamyl@gmail.com">shamyl@gmail.com</a></li>
+			</ul>
+		</header>
+
+
+		<section class="gallery" id="gallery">
+
+			<div class="cell" id="surfacer">
+				<img src="assets/gallery/sfr-0.png" width="538" height="538" />
+				<div class="detail">
+					<h1>Surfacer</h1>
+					<p><a href="https://github.com/ShamylZakariya/Surfacer">Source code on Github</a></p>
+					<p>A 2d side-scrolling physics-based game which I never finished. It no longer even compiles,
+						because it
+						depends on pre-C++0x11 tr1 libraries. I plan on attacking it and getting it running again,
 						because
-						print is neat
-					</li>
-					<li>Native application development for Mac OSX, iOS, &amp; Android. Back in the day: some Win32, GTK, KDE
-						and <a
-								href="https://en.wikipedia.org/wiki/BeOS">BeOS</a> native app development.
-					</li>
-				</ul>
+						it's too <em>neat</em> to let succomb to bitrot.</p>
+					<h2>Features</h2>
+					<ul>
+						<li>Destructible terrain, where cut-off geometry is dynamic, and part of gameplay</li>
+						<li>Soft-body monsters! Grubs! Jellies! Worms! Grippy tentacles! Gross stuff!</li>
+						<li>Fluids</li>
+						<li>Quaint fullscreen shader effects</li>
+						<li>SVG-based geometry representation of monsters, game items, and player, allowing me to design
+							them in Illustrator
+						</li>
+					</ul>
 
-			</section>
+					<div class="shots">
+						<div class="cell">
+							<img data-lazy-src="assets/gallery/sfr-1.png" width="800" height="600" />
+						</div>
+						<div class="cell">
+							<img data-lazy-src="assets/gallery/sfr-2.png" width="800" height="600" />
+						</div>
+						<div class="cell">
+							<img data-lazy-src="assets/gallery/sfr-3.png" width="800" height="600" />
+						</div>
+						<div class="cell">
+							<img data-lazy-src="assets/gallery/sfr-4.png" width="800" height="600" />
+						</div>
+						<div class="cell">
+							<img data-lazy-src="assets/gallery/sfr-5.png" width="800" height="600" />
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+			<div class="cell" id="sgf-sre">
+				<img src="assets/gallery/sre-0.png" width="362" height="362" />
+				<div class="detail">
+					<h1>SGF / SRE</h1>
+					<p>SimpleGameFramework &amp; SimpleRenderingEngine: 3D Game framework written between 2007 and 2010.
+						Written from ground-up ( as-in, I started with an
+						empty project, and wrote it all myself) in C++ and some ObjectiveC, and with rendering in
+						OpenGL/GLSL.</p>
+					<h2>Features</h2>
+					<ul>
+						<li>Physics, using the OpenDynamicsEngine and Bullet, as pluggable modules</li>
+						<li>Shadow mapping for directional (using CSM), point and spot lights (using depth cubemaps),
+							with
+							efficient visibility
+							culling of light volumes
+						</li>
+						<li>Quirky materials framework
+						</li>
+						<li>Voxel-based terrain, editable in real-time, with Lindstrom-Turk edge-collapse mesh
+							optimization,
+							uzing the <a href="https://www.cgal.org">CGAL library.</a></li>
+						<li>Threaded Python scripting for the physics system - mainly used to make autonomous robotics
+							simulations that can query their environment and send commands to
+							servos/motors/actuators/etc
+						</li>
+						<li>Automatic environmental greebling details like grass, decals, etc using 3d perlin noise to
+							keep
+							distributions naturalistic
+						</li>
+					</ul>
+
+					<div class="shots">
+						<div class="cell">
+							<img data-lazy-src="assets/gallery/sre-1.png" width="900" height="500" />
+						</div>
+						<div class="cell">
+							<img data-lazy-src="assets/gallery/sre-2.png" width="900" height="500" />
+						</div>
+						<div class="cell">
+							<img data-lazy-src="assets/gallery/sre-3.png" width="800" height="622" />
+						</div>
+						<div class="cell">
+							<img data-lazy-src="assets/gallery/sre-4.png" width="900" height="522" />
+						</div>
+						<div class="cell">
+							<img data-lazy-src="assets/gallery/sre-5.png" width="900" height="522" />
+						</div>
+						<div class="cell">
+							<img data-lazy-src="assets/gallery/sre-6.png" width="900" height="522" />
+						</div>
+						<div class="cell">
+							<img data-lazy-src="assets/gallery/sre-7.png" width="800" height="422" />
+						</div>
+						<div class="cell">
+							<img data-lazy-src="assets/gallery/sre-8.png" width="937" height="514" />
+						</div>
+						<div class="cell">
+							<img data-lazy-src="assets/gallery/sre-9.png" width="937" height="514" />
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="cell" id="squizit">
+				<img src="assets/gallery/sq-0.png" width="1024" height="1024" />
+				<div class="detail">
+					<h1>Squizit</h1>
+					<p><a href="https://github.com/ShamylZakariya/Squizit">Source code on Github</a></p>
+					<p>iOS implementation of classic dadaist <a
+							href="https://en.wikipedia.org/wiki/Exquisite_corpse">Exquisite
+							Corpse</a> game.</p>
+
+
+					<div class="shots">
+						<div class="cell">
+							<img data-lazy-src="assets/gallery/sq-1.png" width="1536" height="2048" />
+						</div>
+						<div class="cell">
+							<img data-lazy-src="assets/gallery/sq-2.png" width="2048" height="1536" />
+						</div>
+						<div class="cell">
+							<img data-lazy-src="assets/gallery/sq-3.png" width="2048" height="1536" />
+						</div>
+						<div class="cell">
+							<img data-lazy-src="assets/gallery/sq-4.png" width="2048" height="1536" />
+						</div>
+						<div class="cell">
+							<img data-lazy-src="assets/gallery/sq-5.png" width="2048" height="1536" />
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="cell" id="illus-1">
+				<img src="assets/gallery/scope-0.png" width="432" height="432" />
+				<div class="detail">
+					<h1>Various Sciencey Illustrations</h1>
+					<p>I know a few scientific researchers, and sometimes I do illustrations & animations for their
+						papers.</p>
+
+					<div class="shots">
+						<div class="cell">
+							<img data-lazy-src="assets/gallery/scope-1.png" width="760" height="550" />
+						</div>
+						<div class="cell">
+							<img data-lazy-src="assets/gallery/scope-2.png" width="760" height="550" />
+						</div>
+						<div class="cell">
+							<img data-lazy-src="assets/gallery/scope-3.png" width="760" height="550" />
+						</div>
+						<div class="cell">
+							<img data-lazy-src="assets/gallery/med-5.png" width="400" height="400" />
+						</div>
+						<div class="cell">
+							<img data-lazy-src="assets/gallery/med-6.png" width="400" height="400" />
+						</div>
+						<div class="cell">
+							<img data-lazy-src="assets/gallery/hyp-1.png" width="1024" height="768" />
+						</div>
+						<div class="cell">
+							<img data-lazy-src="assets/gallery/med-1.png" width="799" height="600" />
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+		</section>
+
+		<div class="personal" id="cv">
+			<div class="col">
+				<section class="detail">
+					<h2>Skills</h2>
+
+					<ul>
+						<li>C, C++, Objective-C, OpenGL/GLSL, Swift, Python, Java (for Android and server), Javascript
+							(client and server), HTML, CSS/SASS</li>
+						<li>Photoshop, Illustrator, Sketch.app, Pen/Paper</li>
+						<li>Web design, interactive web client-side programming, UI/UX design, &amp; some experience
+							with print, because print is neat</li>
+						<li>Native application development for Mac OSX, iOS, &amp; Android. Back in the day: some Win32,
+							GTK, KDE and <a href="https://en.wikipedia.org/wiki/BeOS">BeOS</a> native app development.
+						</li>
+					</ul>
+
+				</section>
+			</div>
+			<div class="col">
+				<section class="detail">
+					<h2>Interests</h2>
+
+					<ul>
+						<li>Real-time graphics programming</li>
+						<li>User interface design, prototyping & programming, user experience design</li>
+						<li>Illustration, architectural rendering, industrial design</li>
+						<li>Bicycling</li>
+						<li>Woodworking</li>
+					</ul>
+
+				</section>
+			</div>
 		</div>
-		<div class="col">
-			<section class="detail">
-				<h2>Interests</h2>
 
-				<ul>
-					<li>Illustration, architectural rendering, industrial design</li>
-					<li>User interface design, prototyping & programming, user experience design</li>
-					<li>Real-time graphics programming</li>
-					<li>Basic AI (game entity control, behavioral systems, flocking, etc: <em>not</em> high level intelligence stuff which is completely beyond me)</li>
-				</ul>
 
-			</section>
+		<div class="personal">
+			<div class="col">
+				<section class="detail">
+					<h2>Professional Experience</h2>
+
+					<ul>
+						<li>
+							<span class="date">2019-present</span>:<span class="what">Software Engineer, Bluehawk LLC,
+								contracted to Google</span>
+							In my work for Google (through Bluehawk) I have been responsible for building a tool for
+							identifying the nuances and corner cases of Android performance, to aid in making Android a
+							better platform for games. In this role I’ve been responsible for designing and building the
+							testing framework, data reporting/analysis, and a suite of tests which exercise OpenGL,
+							multi-threading strategies, and other performance-oriented tests relevant to game engine
+							designers.
+						</li>
+
+						<li>
+							<span class="date">2016-2019</span>:<span class="what">Software Engineer, Rapid
+								Prototyping at Vulcan, Inc</span>
+							At Vulcan I was responsible for prototyping Paul Allen’s vision with a goal towards
+							productization and IP generation.
+							<ul>
+								<li>Augmented reality in-stadium fan experience for the Seahawks for AR glasses and
+									phones</li>
+								<li>Android-based data collection/distribution system for health workers in developing
+									nations
+									to monitor trends to detect possible outbreaks</li>
+								<li>Hololens-based security glasses experience (ML backend) to aid personnel in
+									recognizing
+									persons of interest on a property</li>
+								<li>Indoor location tracking for venues to improve customer experience while preserving
+									user
+									privacy</li>
+								<li>Developer simulator for Vulcan’s Holodome</li>
+								<li>Input calibration tool for Vulcan’s Holodome installations</li>
+								<li>Multi-camera synthesis for simulating “body presence” in virtual reality</li>
+							</ul>
+						</li>
+
+						<li>
+							<span class="date">2013-2015</span>:<span class="what">UX Designer, UI Designer, Full-Stack
+								Developer for ConsultPro (startup)</span>
+							I was responsible for the UX design, UI design and implementation of an iPad app for Hair
+							Salons. I was also responsible for designing and implementing the network sync prototcol
+							that enabled all signed-in devices to see and work with up-to-date data.
+						</li>
+
+						<li>
+							<span class="date">1999-2016</span>:<span class="what">Art Director &
+								Client-side/Interaction programmer, mobile application developer, APCO
+								Worldwide.</span>Designer
+							and implementer of client side user experience for websites, mobile apps, and so on.
+						</li>
+
+
+						<li>
+							<span class="date">1997-1999</span>:<span class="what">Graphic designer, UI designer, & UI
+								programmer, University of Virginia, Darden School of Business.</span>Responsible
+							for designing and building educational tools in Macromedia Flash & Director.
+						</li>
+
+						<li>
+							<span class="date">1996</span>:<span class="what">3D Modeler, Texture Mapper, University of
+								Virginia VR Lab under Randy Pausch</span>Responsible for modeling and texture mapping
+							materials for VR simulation.
+						</li>
+
+						<li>
+							<span class="date">1995-1999</span>:<span class="what">Bachelor's in art,
+								printmaking (intaglio,lithography) & painting at the University of Virginia.</span>
+						</li>
+
+					</ul>
+
+				</section>
+
+			</div>
+			<div class="col">
+
+				<section class="detail">
+					<h2>Personal Work</h2>
+
+					<ul>
+						<li>
+							<span class="date">1990-1999</span>:<span class="what">Learning to program and getting
+								hooked on graphics programming.</span>Wrote
+							a simple software 3D graphics rasterizer in C/C++, supporting texture mapping, depth buffer,
+							and simple
+							gouraud shading &mdash; this was a great exercise in <a
+								href="https://www.amazon.com/Michael-Abrashs-Graphics-Programming-Special/dp/1576101746">learning
+								fast integer math</a>. Wrote several experimental user-interfaces in Java, to make
+							various day to day
+							tasks
+							like file browsing and designing finite state machines more intuitive.
+						</li>
+
+						<li>
+							<span class="date">1999-2004</span>:<span class="what">Wrote a primitive robotics simulation
+								toolkit.</span>I got
+							very interested in <a
+								href="https://en.wikipedia.org/wiki/Subsumption_architecture">behavioral
+								artificial intelligence</a> and decided to build a toolkit for hosting and testing
+							autonomous agents. It
+							was a fun sandbox! Plus, I got hooked on OpenGL.
+						</li>
+
+						<li>
+							<span class="date">2004-2010</span>:<span class="what">Wrote several 3D game
+								engines.</span>Robotic
+							simulation required visualization, and that spun into writing 3 different (and increasingly
+							capable) 3D
+							game "engines" with physics, scripting, and so on. They never came to anything really, but
+							were a
+							tremendous learning experience, making me a better programmer.
+						</li>
+
+						<li>
+							<span class="date">2010-2013</span>:<span class="what">Development of side-scrolling action
+								game "Surfacer".</span>While
+							riding my bike to work one day I had an epiphany about destructible verlet-integrated meshes
+							for game
+							level geometry.<br />
+							<em>It was a total dead end!</em> But it led to a concept for a side-scrolling 2D game where
+							the character must reshape the environment, making new dynamic shapes, to solve spacial
+							puzzles. Plus, I
+							got to write a 2d version of the marching cubes alrgorithm.<br />
+							<a
+								href="https://github.com/ShamylZakariya/Surfacer">https://github.com/ShamylZakariya/Surfacer</a>
+						</li>
+
+						<li><span class="date">2013-present</span>:<span class="what">Writing <a
+									href="https://github.com/ShamylZakariya/">open source</a> <a href="https://github.com/ShamylZakariya/NormalMappr">macOS</a>, <a href="https://github.com/ShamylZakariya/Squizit">iOS</a> and <a href="https://github.com/ShamylZakariya/StickyHeaders">Android</a> apps and
+									libraries</a>, <a href="https://github.com/ShamylZakariya/Surfacer">various silly
+									experiments in Unity</a> and <a
+									href="https://github.com/ShamylZakariya/KesslerSyndrome">some</a> OpenGL
+								<a href="https://github.com/ShamylZakariya/MarchingCubes">chicanery</a>.</span>
+						</li>
+					</ul>
+				</section>
+
+			</div>
 		</div>
+
+		<footer>
+			Please forgive my simple website... <em>the cobbler&rsquo;s son has no shoes</em>.
+		</footer>
+
 	</div>
 
-
-	<div class="personal">
-		<div class="col">
-			<section class="detail">
-				<h2>Professional Experience</h2>
-
-				<ul>
-					<li>
-						<span class="date">1995-1999</span>:<span class="what">Bachelor's in art,
-				printmaking (intaglio,lithography) & painting at the University of Virginia.</span>
-					</li>
-
-					<li>
-						<span class="date">1997-1999</span>:<span class="what">Graphic designer, UI designer, & UI programmer, University of Virginia, Darden School of Business.</span>Responsible
-						for designing and building educational tools in Macromedia Flash & Director.
-					</li>
-
-					<li>
-						<span class="date">1996</span>:<span class="what">3D Modeler, Texture Mapper, University of Virginia VR Lab under Randy Pausch</span>Responsible for modeling and texture mapping materials for VR simulation.
-					</li>
-
-					<li>
-						<span class="date">1999-2016</span>:<span class="what">Art Director & Client-side/Interaction programmer, mobile application developer, APCO Worldwide.</span>Designer
-						and implementer of client side user experience for websites, mobile apps, and so on.
-					</li>
-
-					<li>
-						<span class="date">2013-2015</span>:<span class="what">UX Designer, UI Designer, Full-Stack Developer for ConsultPro (startup)</span>
-						I was responsible for the UX design, UI design and implementation of an iPad app for Hair Salons. I was also responsible for designing and implementing the network sync prototcol that enabled all signed-in devices to see and work with up-to-date data.
-					</li>
-
-					<li>
-						<span class="date">2016-present</span>:<span class="what">Software Engineer, Rapid Prototyping at Vulcan, Inc</span>
-						At Vulcan I'm responsible for building interesting things; currently I'm working in computer vision to do camera pose estimation for augmented reality.
-					</li>
-
-				</ul>
-
-			</section>
-
-		</div>
-		<div class="col">
-
-			<section class="detail">
-				<h2>Personal Work</h2>
-
-				<ul>
-					<li>
-						<span class="date">1990-1999</span>:<span class="what">Learning to program and getting hooked on graphics programming.</span>Wrote
-						a simple software 3D graphics rasterizer in C/C++, supporting texture mapping, depth buffer, and simple
-						gouraud shading &mdash; this was a great exercise in <a
-							href="https://www.amazon.com/Michael-Abrashs-Graphics-Programming-Special/dp/1576101746">learning
-						fast integer math</a>. Wrote several experimental user-interfaces in Java, to make various day to day
-						tasks
-						like file browsing and designing finite state machines more intuitive.
-					</li>
-
-					<li>
-						<span class="date">1999-2004</span>:<span
-							class="what">Wrote a primitive robotics simulation toolkit.</span>I got
-						very interested in <a href="https://en.wikipedia.org/wiki/Subsumption_architecture">behavioral
-						artificial intelligence</a> and decided to build a toolkit for hosting and testing autonomous agents. It
-						was a fun sandbox! Plus, I got hooked on OpenGL.
-					</li>
-
-					<li>
-						<span class="date">2004-2010</span>:<span class="what">Wrote several 3D game engines.</span>Robotic
-						simulation required visualization, and that spun into writing 3 different (and increasingly capable) 3D
-						game "engines" with physics, scripting, and so on. They never came to anything really, but were a
-						tremendous learning experience, making me a better programmer.
-					</li>
-
-					<li>
-						<span class="date">2010-2013</span>:<span class="what">Development of side-scrolling action game "Surfacer".</span>While
-						riding my bike to work one day I had an epiphany about destructible verlet-integrated meshes for game
-						level geometry.<br/>
-						<em>It was a total dead end!</em> But it led to a concept for a side-scrolling 2D game where
-						the character must reshape the environment, making new dynamic shapes, to solve spacial puzzles. Plus, I
-						got to write a 2d version of the marching cubes alrgorithm.<br/>
-						<strong>Update! As of 2017 Surfacer is back in development!</strong> I've written a completely new physics
-						system for better performance and accuracy, and having a great time.
-					</li>
-
-					<li><span class="date">2013-present</span>:<span class="what">Writing <a
-							href="https://github.com/ShamylZakariya/">open source iOS and Android apps and libraries</a>.</span>
-					</li>
-
-				</ul>
-			</section>
-
-		</div>
-	</div>
-
-
-
-
-
-	<footer>
-		Please forgive my simple website... <em>the cobbler&rsquo;s son has no shoes</em>.
-	</footer>
-
-</div>
-
-<script src="assets/js/zepto.min.js"></script>
-<script src="assets/js/fx.js"></script>
-<script src="assets/js/main.js"></script>
+	<script src="assets/js/zepto.min.js"></script>
+	<script src="assets/js/fx.js"></script>
+	<script src="assets/js/main.js"></script>
 
 
 </body>
+
 </html>
