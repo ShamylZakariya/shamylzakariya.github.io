@@ -39,6 +39,60 @@
 
 
 		<section class="gallery" id="gallery">
+			<div class="cell" id="marching_cubes">
+				<img src="assets/gallery/mc_0.png" width="538" height="538" />
+				<div class="detail">
+					<h1>Marching Cubes</h1>
+					<p><a href="https://github.com/ShamylZakariya/MarchingCubes">Source code on Github</a></p>
+					<p>An experiment with multithreaded marching cubes which degenerated, as should have been expected, into an <a href="https://alienanthology.fandom.com/wiki/Acheron_(LV-426)">LV-426</a> simulator.</p>
+					<h2>Features</h2>
+					<ul>
+						<li>Multithreaded marching cubes tesselator, using an octree space subdivision to reduce the space to march</li>
+						<li>Simple OpenGL renderer, from first principles, no libraries or engines here</li>
+						<li>Several volume primitive types, up to an infinite paging terrain with automatic spatially stable random reebling system</li>
+						<li>Simple post processing stack, used for procedural sky and volumetric noise-based raymarched fog</li>
+					</ul>
+
+					<div class="shots">
+						<div class="cell">
+							<img data-lazy-src="assets/gallery/mc_lv_426.png" width="1460" height="1155" />
+						</div>
+						<div class="cell">
+							<img data-lazy-src="assets/gallery/mc_simple.png" width="2516" height="1604" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="cell" id="skeletons">
+				<img src="assets/gallery/skeletons_0.png" width="538" height="538" />
+				<div class="detail">
+					<h1>Realtime multi-body tracking in VR</h1>
+					<p>Work done at Vulcan, Inc to create realtime physical embodyment in VR, using multiple Intel RealSense depth cameras.
+					<h2>Features</h2>
+					<ul>
+						<li>16 Intel RealSense depth cameras, with automatic extrinsics computed via computer-vision by observing a Steam Vive Tracker with an attached aruco.</li>
+						<li>Each depth camera had a dedicated Intel NUC running human body pose tracking software, and the poses were transformed to world space and sent to a pose aggregating server</li>
+						<li>The pose aggregating server spatio/temporally tracked humans in the room and computed the best pose skeletons for each through analysis of the 16 pose streams</li>
+						<li>All this was presented in real-time to users wearing a SteamVR headset, allowing users to see one another in the room and interact.</li>
+					</ul>
+
+					<div class="shots">
+						<div class="cell">
+							<img data-lazy-src="assets/gallery/skeletons_1.png" width="1913" height="935" />
+						</div>
+						<div class="cell">
+							<img data-lazy-src="assets/gallery/skeletons_2.png" width="1269" height="713" />
+						</div>
+						<div class="cell">
+							<img data-lazy-src="assets/gallery/skeletons_3.png" width="1271" height="711" />
+						</div>
+						<div class="cell">
+							<img data-lazy-src="assets/gallery/skeletons_4.png" width="1269" height="710" />
+						</div>
+					</div>
+				</div>
+			</div>
 
 			<div class="cell" id="surfacer">
 				<img src="assets/gallery/sfr-0.png" width="538" height="538" />
