@@ -1,0 +1,1 @@
+Rando app includes no network connectivity, no syncing, no ads. All storage is local, and no data whatsoever is shared with the developer. All source code is available here: https://github.com/ShamylZakariya/Rando
