@@ -8,7 +8,11 @@ mailto:shamyl@gmail.com
 
 I’m a C, C++, Rust, Objective-C, C#, Java, Swift, Python, OpenGL/GLSL, HTML/CSS/Javascript and anything else programmer focusing on user experience, graphics, performance, mobile apps and AR/VR.
 
-2019-present: Bluehawk, LLC
+2020-present: Streem, LLC
+Graphics Engineer, AR
+At Streem I work on optimizing and extending the AR experience of Streem's AR communications tools. Specifically focusing on custom metal rendering pipelines, and interactive guided experiences for users.
+
+2019-2020: Bluehawk, LLC
 Software Engineer, contracted to Google
 In my work for Google I have been responsible for building a tool for identifying the nuances and corner cases of Android performance, to aid in making Android a better platform for games. In this role I’ve been responsible for designing and building the testing framework, data reporting/analysis, and a suite of tests which exercise OpenGL, multi-threading strategies, and other performance-oriented tests relevant to game engine designers.
 

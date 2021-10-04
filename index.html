@@ -39,18 +39,50 @@
 
 
 		<section class="gallery" id="gallery">
+			<div class="cell" id="ggq">
+				<img src="assets/gallery/ggq-0.png" width="538" height="538" />
+				<div class="detail">
+					<h1>Platformer</h1>
+					<p><a href="https://github.com/ShamylZakariya/Platformer">Source code on Github</a></p>
+					<p>A remake of the first level of the delightful 1990 Gamebody platformer <a href="https://en.wikipedia.org/wiki/Gargoyle%27s_Quest">Gargoyle's Quest</a>.
+					</p>
+					<h2>Features</h2>
+					<ul>
+						<li>Implemented in Rust, using just <a href="https://github.com/gfx-rs/wgpu">wgpu</a> for the display stack, as a learning experience.</li>
+						<li>Gamepad support, via <a href="https://gitlab.com/gilrs-project/gilrs">gil-rs</a></li>
+						<li>Full audio</li>
+						<li>Post processing to provide pixellated Gameboy-esque LCD graphics effects</li>
+					</ul>
+
+					<div class="shots">
+						<div class="cell">
+							<img data-lazy-src="assets/gallery/ggq-1.png" width="1200" height="1020" />
+						</div>
+						<div class="cell">
+							<img data-lazy-src="assets/gallery/ggq-2.png" width="1200" height="1020" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+
 			<div class="cell" id="marching_cubes">
 				<img src="assets/gallery/mc_0.png" width="538" height="538" />
 				<div class="detail">
 					<h1>Marching Cubes</h1>
 					<p><a href="https://github.com/ShamylZakariya/MarchingCubes">Source code on Github</a></p>
-					<p>An experiment with multithreaded marching cubes which degenerated, as should have been expected, into an <a href="https://alienanthology.fandom.com/wiki/Acheron_(LV-426)">LV-426</a> simulator.</p>
+					<p>An experiment with multithreaded marching cubes which degenerated, as should have been expected,
+						into an <a href="https://alienanthology.fandom.com/wiki/Acheron_(LV-426)">LV-426</a> simulator.
+					</p>
 					<h2>Features</h2>
 					<ul>
-						<li>Multithreaded marching cubes tesselator, using an octree space subdivision to reduce the space to march</li>
+						<li>Multithreaded marching cubes tesselator, using an octree space subdivision to reduce the
+							space to march</li>
 						<li>Simple OpenGL renderer, from first principles, no libraries or engines here</li>
-						<li>Several volume primitive types, up to an infinite paging terrain with automatic spatially stable random reebling system</li>
-						<li>Simple post processing stack, used for procedural sky and volumetric noise-based raymarched fog</li>
+						<li>Several volume primitive types, up to an infinite paging terrain with automatic spatially
+							stable random reebling system</li>
+						<li>Simple post processing stack, used for procedural sky and volumetric noise-based raymarched
+							fog</li>
 					</ul>
 
 					<div class="shots">
@@ -68,13 +100,18 @@
 				<img src="assets/gallery/skeletons_0.png" width="538" height="538" />
 				<div class="detail">
 					<h1>Realtime multi-body tracking in VR</h1>
-					<p>Work done at Vulcan, Inc to create realtime physical embodyment in VR, using multiple Intel RealSense depth cameras.
+					<p>Work done at Vulcan, Inc to create realtime physical embodyment in VR, using multiple Intel
+						RealSense depth cameras.
 					<h2>Features</h2>
 					<ul>
-						<li>16 Intel RealSense depth cameras, with automatic extrinsics computed via computer-vision by observing a Steam Vive Tracker with an attached aruco.</li>
-						<li>Each depth camera had a dedicated Intel NUC running human body pose tracking software, and the poses were transformed to world space and sent to a pose aggregating server</li>
-						<li>The pose aggregating server spatio/temporally tracked humans in the room and computed the best pose skeletons for each through analysis of the 16 pose streams</li>
-						<li>All this was presented in real-time to users wearing a SteamVR headset, allowing users to see one another in the room and interact.</li>
+						<li>16 Intel RealSense depth cameras, with automatic extrinsics computed via computer-vision by
+							observing a Steam Vive Tracker with an attached aruco.</li>
+						<li>Each depth camera had a dedicated Intel NUC running human body pose tracking software, and
+							the poses were transformed to world space and sent to a pose aggregating server</li>
+						<li>The pose aggregating server spatio/temporally tracked humans in the room and computed the
+							best pose skeletons for each through analysis of the 16 pose streams</li>
+						<li>All this was presented in real-time to users wearing a SteamVR headset, allowing users to
+							see one another in the room and interact.</li>
 					</ul>
 
 					<div class="shots">
@@ -235,41 +272,6 @@
 				</div>
 			</div>
 
-			<div class="cell" id="illus-1">
-				<img src="assets/gallery/scope-0.png" width="432" height="432" />
-				<div class="detail">
-					<h1>Various Sciencey Illustrations</h1>
-					<p>I know a few scientific researchers, and sometimes I do illustrations & animations for their
-						papers.</p>
-
-					<div class="shots">
-						<div class="cell">
-							<img data-lazy-src="assets/gallery/scope-1.png" width="760" height="550" />
-						</div>
-						<div class="cell">
-							<img data-lazy-src="assets/gallery/scope-2.png" width="760" height="550" />
-						</div>
-						<div class="cell">
-							<img data-lazy-src="assets/gallery/scope-3.png" width="760" height="550" />
-						</div>
-						<div class="cell">
-							<img data-lazy-src="assets/gallery/med-5.png" width="400" height="400" />
-						</div>
-						<div class="cell">
-							<img data-lazy-src="assets/gallery/med-6.png" width="400" height="400" />
-						</div>
-						<div class="cell">
-							<img data-lazy-src="assets/gallery/hyp-1.png" width="1024" height="768" />
-						</div>
-						<div class="cell">
-							<img data-lazy-src="assets/gallery/med-1.png" width="799" height="600" />
-						</div>
-					</div>
-
-				</div>
-			</div>
-
-
 		</section>
 
 		<div class="personal" id="cv">
@@ -278,7 +280,8 @@
 					<h2>Skills</h2>
 
 					<ul>
-						<li>C, C++, Rust, Objective-C, OpenGL/GLSL, Swift, Python, Java (for Android and server), Javascript
+						<li>C, C++, Rust, Objective-C, OpenGL/GLSL, Swift, Python, Java (for Android and server),
+							Javascript
 							(client and server), HTML, CSS/SASS</li>
 						<li>Photoshop, Illustrator, Sketch.app, Pen/Paper</li>
 						<li>Web design, interactive web client-side programming, UI/UX design, &amp; some experience
@@ -314,11 +317,21 @@
 
 					<ul>
 						<li>
-							<span class="date">2019-present</span>:<span class="what">Software Engineer, Bluehawk LLC,
+							<span class="date">2020-present</span>:<span class="what">Graphics Engineer, Streem
+								LLC</span>
+							At Streem I have been responsible for optimizing and extending the iOS graphics pipelines
+							for
+							Streem's AR applications. I have developed custom rendering paths, optimized existing ones,
+							and
+							worked to develop custom user experiences through AR to help customers best utilize the
+							platform.
+						</li>
+						<li>
+							<span class="date">2019-2020</span>:<span class="what">Software Engineer, Bluehawk LLC,
 								contracted to Google</span>
-							In my work for Google (through Bluehawk) I have been responsible for building a tool for
+							In my work for Google (through Bluehawk) I was responsible for building a tool for
 							identifying the nuances and corner cases of Android performance, to aid in making Android a
-							better platform for games. In this role I’ve been responsible for designing and building the
+							better platform for games. In this role was responsible for designing and building the
 							testing framework, data reporting/analysis, and a suite of tests which exercise OpenGL,
 							multi-threading strategies, and other performance-oriented tests relevant to game engine
 							designers.
@@ -330,27 +343,35 @@
 							At Vulcan I was responsible for prototyping Paul Allen’s vision with a goal towards
 							productization and IP generation.
 							<ul>
-								<li>Augmented reality in-stadium fan experience for the Seahawks for AR glasses and phones built in Python/numpy, Unity and native C++
+								<li>Augmented reality in-stadium fan experience for the Seahawks for AR glasses and
+									phones built in Python/numpy, Unity and native C++
 								</li>
-								<li>Android-based data collection/distribution system for health workers in developing nations to monitor trends to detect possible outbreaks</li>
-								<li>Hololens-based security glasses experience (ML backend) to aid personnel in recognizing persons of interest on a property, built in C#, C++ and Unity</li>
-								<li>Indoor location tracking for venues to improve customer experience while preserving user privacy built in Swift on iOS</li>
+								<li>Android-based data collection/distribution system for health workers in developing
+									nations to monitor trends to detect possible outbreaks</li>
+								<li>Hololens-based security glasses experience (ML backend) to aid personnel in
+									recognizing persons of interest on a property, built in C#, C++ and Unity</li>
+								<li>Indoor location tracking for venues to improve customer experience while preserving
+									user privacy built in Swift on iOS</li>
 								<li>Developer simulator for Vulcan’s Holodome, built in C# for Unity</li>
 								<li>Input calibration for Vulcan’s Holodome installations, built in C# for Unity</li>
-								<li>Multi-camera synthesis for simulating “body presence” in virtual reality with a network layer built in C++, and user experience in C# for Unity</li>
+								<li>Multi-camera synthesis for simulating “body presence” in virtual reality with a
+									network layer built in C++, and user experience in C# for Unity</li>
 							</ul>
 						</li>
 
 						<li>
 							<span class="date">1999-2016</span>:<span class="what">Art Director &
 								Client-side/Interaction programmer, mobile application developer, APCO
-								Worldwide.</span>Designer and implementer of client side user experience for websites, mobile apps, and so on.
-								<ul>
-									<li>Fully responsive web application front ends written in HTML, SASS/CSS, and Javascript</li>
-									<li>Native mobile applications for iOS and Android, written in Objective-C, Swift, and Java></li>
-									<li>Designed user experiences in Sketch, Photoshop, and Illustrator</li>
-									<li>Prototyped user experiences using web technologies (HTML, SASS/CSS, Javascript)</li>
-								</ul>
+								Worldwide.</span>Designer and implementer of client side user experience for websites,
+							mobile apps, and so on.
+							<ul>
+								<li>Fully responsive web application front ends written in HTML, SASS/CSS, and
+									Javascript</li>
+								<li>Native mobile applications for iOS and Android, written in Objective-C, Swift, and
+									Java></li>
+								<li>Designed user experiences in Sketch, Photoshop, and Illustrator</li>
+								<li>Prototyped user experiences using web technologies (HTML, SASS/CSS, Javascript)</li>
+							</ul>
 						</li>
 
 						<li>
@@ -388,62 +409,11 @@
 				<section class="detail">
 					<h2>Personal Work</h2>
 
-					<ul>
-						<li>
-							<span class="date">1990-1999</span>:<span class="what">Learning to program and getting
-								hooked on graphics programming.</span>Wrote
-							a simple software 3D graphics rasterizer in C/C++, supporting texture mapping, depth buffer,
-							and simple
-							gouraud shading &mdash; this was a great exercise in <a
-								href="https://www.amazon.com/Michael-Abrashs-Graphics-Programming-Special/dp/1576101746">learning
-								fast integer math</a>. Wrote several experimental user-interfaces in Java, to make
-							various day to day
-							tasks
-							like file browsing and designing finite state machines more intuitive.
-						</li>
+					<p>In my free time, I write silly experiments in <a
+							href="https://github.com/ShamylZakariya/Platformer">Rust</a>, <a
+							href="https://github.com/ShamylZakariya/MarchingCubes">C++/OpenGL</a>, and so on.</p>
 
-						<li>
-							<span class="date">1999-2004</span>:<span class="what">Wrote a primitive robotics simulation
-								toolkit.</span>I got
-							very interested in <a
-								href="https://en.wikipedia.org/wiki/Subsumption_architecture">behavioral
-								artificial intelligence</a> and decided to build a toolkit for hosting and testing
-							autonomous agents. It
-							was a fun sandbox! Plus, I got hooked on OpenGL.
-						</li>
 
-						<li>
-							<span class="date">2004-2010</span>:<span class="what">Wrote several 3D game
-								engines.</span>Robotic
-							simulation required visualization, and that spun into writing 3 different (and increasingly
-							capable) 3D
-							game "engines" with physics, scripting, and so on. They never came to anything really, but
-							were a
-							tremendous learning experience, making me a better programmer.
-						</li>
-
-						<li>
-							<span class="date">2010-2013</span>:<span class="what">Development of side-scrolling action
-								game "Surfacer".</span>While
-							riding my bike to work one day I had an epiphany about destructible verlet-integrated meshes
-							for game
-							level geometry.<br />
-							<em>It was a total dead end!</em> But it led to a concept for a side-scrolling 2D game where
-							the character must reshape the environment, making new dynamic shapes, to solve spacial
-							puzzles. Plus, I
-							got to write a 2d version of the marching cubes alrgorithm.<br />
-							<a
-								href="https://github.com/ShamylZakariya/Surfacer">https://github.com/ShamylZakariya/Surfacer</a>
-						</li>
-
-						<li><span class="date">2013-present</span>:<span class="what">Writing <a
-									href="https://github.com/ShamylZakariya/">open source</a> <a href="https://github.com/ShamylZakariya/NormalMappr">macOS</a>, <a href="https://github.com/ShamylZakariya/Squizit">iOS</a> and <a href="https://github.com/ShamylZakariya/StickyHeaders">Android</a> apps and
-									libraries</a>, <a href="https://github.com/ShamylZakariya/Surfacer">various silly
-									experiments in Unity</a> and <a
-									href="https://github.com/ShamylZakariya/KesslerSyndrome">some</a> OpenGL
-								<a href="https://github.com/ShamylZakariya/MarchingCubes">chicanery</a>.</span>
-						</li>
-					</ul>
 				</section>
 
 			</div>
