@@ -12,10 +12,13 @@ I’m a C, C++, Swift, Rust, Objective-C, C#, Java, Python, OpenGL/GLSL, HTML/CS
 Graphics Engineer
 At Streem I work on optimizing and extending the AR experience of Streem's AR tools, specifically focusing on custom metal rendering pipelines, and interactive guided experiences for users.
 At Streem I’ve been responsible for:
-Prototyping several different strategies to optimize scanning a user’s space both in terms of speed, quality, and enjoyment
-Implementing graphics pipelines for the above (mostly via ARKit, but a fair amount of custom metal pipeline and shader code)
-Testing these prototyped experiences with users, and developing a final polished experience which is currently shipping in the Lowe’s app
-Optimizing the graphics pipeline for both performance and quality of appearance
+- Prototyping several different strategies to optimize scanning a user’s space both in terms of speed, quality, and enjoyment
+- Implementing graphics pipelines for the above (mostly via ARKit, but a fair amount of custom metal pipeline and shader code)
+- Testing these prototyped experiences with users, and developing a final polished experience which is currently shipping in the Lowe’s app
+- Optimizing the graphics pipeline for both performance and quality of appearance
+- This work won an AWE “Auggie” for Best Consumer App: https://www.awexr.com/usa-2022/auggie-winners
+- See also the accompanying promo video: https://vimeo.com/697362441/e1f98bdd71
+
 
 2019-2020: Bluehawk, LLC
 Software Engineer, contracted to Google
@@ -25,21 +28,21 @@ In my work for Google I was responsible for building a tool for identifying the 
 Senior Software Engineer, Rapid Prototyping
 At Vulcan I was responsible for prototyping Paul Allen’s vision with a goal towards productization and IP generation.
 My work at Vulcan focused on AR/VR experiences, but dabbled in other directions at times:
-Augmented reality in-stadium fan experience for the Seahawks for AR glasses and phones built in Python/numpy, Unity and native C++
-Hololens-based security glasses experience (ML backend) to aid personnel in recognizing persons of interest on a property, built in C#, C++ and Unity
-Developer simulator for Vulcan’s Holodome, built in C# for Unity
-Input calibration for Vulcan’s Holodome installations, built in C# for Unity
-Multi-camera synthesis for simulating “body presence” in virtual reality with a network layer built in C++, and user experience in C# for Unity
-Android-based data collection/distribution system for health workers in developing nations to monitor trends to detect possible outbreaks
-Indoor location tracking for venues to improve customer experience while preserving user privacy built in Swift on iOS
+- Augmented reality in-stadium fan experience for the Seahawks for AR glasses and phones built in Python/numpy, Unity and native C++
+- Hololens-based security glasses experience (ML backend) to aid personnel in recognizing persons of interest on a property, built in C#, C++ and Unity
+- Developer simulator for Vulcan’s Holodome, built in C# for Unity
+- Input calibration for Vulcan’s Holodome installations, built in C# for Unity
+- Multi-camera synthesis for simulating “body presence” in virtual reality with a network layer built in C++, and user experience in C# for Unity
+- Android-based data collection/distribution system for health workers in developing nations to monitor trends to detect possible outbreaks
+- Indoor location tracking for venues to improve customer experience while preserving user privacy built in Swift on iOS
 
 1999-2016: APCO Worldwide
 Art Director, Front-End Developer
 At APCO Worldwide I was responsible for working with clients to prototype, test, design and build websites, web applications, dynamic data visualizations, online  games, and native mobile applications.
-Fully responsive web application front ends written in HTML, SASS/CSS, and Javascript
-Native mobile applications for iOS and Android, written in Objective-C, Swift, and Java
-Designed user experiences in Sketch, Photoshop, and Illustrator
-Prototyped user experiences using web technologies (HTML, SASS/CSS, Javascript)
+- Fully responsive web application front ends written in HTML, SASS/CSS, and Javascript
+- Native mobile applications for iOS and Android, written in Objective-C, Swift, and Java
+- Designed user experiences in Sketch, Photoshop, and Illustrator
+- Prototyped user experiences using web technologies (HTML, SASS/CSS, Javascript)
 
 2013-2015: ConsultPro (a failed startup)
 UX Designer, UI Designer, Full-Stack Developer
