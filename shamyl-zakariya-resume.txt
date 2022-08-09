@@ -8,7 +8,7 @@ mailto:shamyl@gmail.com
 
 I’m a C, C++, Swift, Rust, Objective-C, C#, Java, Python, OpenGL/GLSL, HTML/CSS/Javascript and anything else programmer focusing on user experience, graphics, performance, mobile apps and AR/VR.
 
-2020-present: Stream, LLC
+2020-present: Streem, LLC
 Graphics Engineer
 At Streem I work on optimizing and extending the AR experience of Streem's AR tools, specifically focusing on custom metal rendering pipelines, and interactive guided experiences for users.
 At Streem I’ve been responsible for:
